@@ -1,13 +1,789 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Title -->
+	<title>Создание сайтов</title>
+
+	<!-- CSS Plugins -->
+	<link rel="stylesheet" href="./css/plugins/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/plugins/font-awesome.css">
+	<link rel="stylesheet" href="./css/plugins/magnific-popup.css">
+	<link rel="stylesheet" href="./css/plugins/simplebar.css">
+	<link rel="stylesheet" href="./css/plugins/owl.carousel.min.css">
+	<link rel="stylesheet" href="./css/plugins/owl.theme.default.min.css">
+	<link rel="stylesheet" href="./css/plugins/jquery.animatedheadline.css">
+
+	<!-- CSS Base -->
+	<link rel="stylesheet" href="./css/style.css">
+
 </head>
+
 <body>
-    
-    <h1>Helllo</h1>
+
+	<!-- Home Section -->
+	<section class="home">
+
+		<!-- Banner -->
+		<div class="banner">
+			<h1>Создаю качественные сайты</h1>
+			<p class="cd-headline rotate-1">
+				<span class="cd-words-wrapper">
+					<b class="is-visible">Front-end разработчик</b>
+					<b>Предлагаю интересный дизайн</b>
+					<b>Делаю вёрстку сайта</b>
+					<b>Создаю логику для сайта на Javascript</b>
+					<b>Не нарушаю сроков</b>
+				</span>
+			</p>
+			<p class="tech"><span>Skills:</span> Html, Css, Scss, Bootstrap4, Javascript, Jquery, Vue.js, Laravel/blade,
+				Photoshop, Git</p>
+		</div>
+		<!-- Menu -->
+		<div class="menu">
+			<div class="but-menu">
+				<div class="line line-top"></div>
+				<div class="line line-middle"></div>
+				<div class="line line-bottom"></div>
+			</div>
+			<a href="tg://resolve?domain=andrey4639" class="but-telegram menu-item">
+				<i class="fab fa-telegram-plane nowhite" data-tooltip="телеграм" data-position="left"></i>
+			</a>
+			<a href="tel:+380956604639" class="but-contact menu-item">
+				<i class="fas fa-mobile nowhite" data-tooltip="позвонить" data-position="left"></i>
+			</a>
+			<div class="but-about menu-item">
+				<i class="fas fa-fire-alt about-show" data-tooltip="главная" data-position="top"></i>
+			</div>
+			<div class="but-resume menu-item">
+				<i class="fas fa-address-card resume-show" data-tooltip="резюме" data-position="right"></i>
+			</div>
+			<div class="but-portfolio menu-item">
+				<i class="fas fa-briefcase portfolio-show" data-tooltip="портфолио" data-position="right"></i>
+			</div>
+		</div>
+
+		<div class="page-wrap">
+			<div class="page-background"></div>
+		</div>
+
+	</section>
+
+	<!-- About Section -->
+	<section class="about section" data-simplebar>
+		<div class="container">
+			<div class="header-page mt-70">
+				<i class="fas fa-fire-alt icon-page"></i>
+				<i class="far fa-times-circle close-page" data-tooltip="close page" data-position="left"></i>
+				<h2>Обо мне</h2>
+			</div>
+
+			<!-- Personal Info Start -->
+			<div class="row mt-100 mob-mt">
+
+				<!-- Information Block -->
+				<div class="col-sm-12">
+					<div class="info box">
+						<div class="row">
+							<div class="col-lg-4 col-sm-4">
+								<div class="photo pt-10">
+									<img alt="webp" src="./img/andrey4639.webp">
+								</div>
+							</div>
+							<div class="col-lg-8 col-sm-8">
+								<h4>Андрей Заяц</h4>
+								<div class="loc">
+									<i class="fas fa-map-marked-alt"></i> Чернигов, Украина
+								</div>
+								<p>Мне 22, специализируюсь на UX/UI дизайне и Frontend разработке. 
+									При выполнении задачи всегда на связи, никуда не пропадаю и довожу дело до конца. Мне нравится осознавать, что моя работа помогает людям, приносит пользу. Дизайн делаю современным и понятным, пишу чистый код, который легко масштабировать и поддерживать.
+									Имею личный и командный опыт работы. Ставлю цели и достигаю их, с каждым новым проектом улучшаю свои навыки, регулярно изучаю актуальные технологии.</p>
+							</div>
+						</div>
+						<div class="btn-about">
+							<a href="tg://resolve?domain=andrey4639" class="btn-st">Telegram</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Personal Info End -->
+
+			<!-- Service Row Start -->
+			<div class="row mt-100">
+
+				<!-- Header Block -->
+				<div class="col-md-12">
+					<div class="header-box mb-50">
+						<h3>Услуги</h3>
+					</div>
+				</div>
+
+				<!-- Service Item -->
+				<div class="col-lg-6 col-sm-6">
+					<div class="service box mb-40">
+						<i class="fas fa-palette"></i>
+						<h4>Веб-дизайн</h4>
+						<p>Могу создать дизайн для сайта с нуля, который привлечет новых пользователей. С баннерами и логотипами также работал, поэтому компетентен в этом вопросе.</p>
+					</div>
+				</div>
+
+				<!-- Service Item -->
+				<div class="col-lg-6 col-sm-6">
+					<div class="service box mb-40">
+						<i class="fab fa-html5"></i>
+						<h4>Верстка</h4>
+						<p>Адаптивная и кроссбраузерная, верстка под laravel/blade или cms. Высокая скорость сайта по Google PageSpeed (>90).
+							Верстка отдельных блоков / страниц в рамках существующих и новых проектов</p>
+					</div>
+				</div>
+
+				<!-- Service Item -->
+				<div class="col-lg-6 col-sm-6">
+					<div class="service box mb-40">
+						<i class="fab fa-js-square"></i>
+						<h4>Реализация JavaScript логики</h4>
+						<p>Начиная от небольших правок, заканчивая сложными системами</p>
+					</div>
+				</div>
+
+				<!-- Service Item -->
+				<div class="col-lg-6 col-sm-6">
+					<div class="service box mb-40">
+						<i class="far fa-lightbulb"></i>
+						<h4>Сайт любой сложности</h4>
+						<p>В моей команде есть специалисты, с которыми я могу сделать сайт для любых ваших целей в пределах законного;) Мы ведём проект «от А до Я» , на котором вы сможете заработать.</p>
+					</div>
+				</div>
+			</div>
+			<!-- Service Row End -->
+
+			<!-- Testimonial Row Start -->
+			<div class="row testimonial mt-60">
+
+				<!-- Header Block -->
+				<div class="col-md-12">
+					<div class="header-box mb-50">
+						<h3>Последние отзывы</h3>
+					</div>
+				</div>
+
+				<div class="owl-carousel owl-theme">
+
+					<!-- Testimonail Item -->
+					<div class="testimonial-item">
+						<div class="media">
+							<img src="./img/fh.png" alt="">
+							<div class="content">
+								<h4>Сергей R </h4>
+								<p>Фронт-энд разработчик HTML/CSS/JS + Bootstrap</p>
+							</div>
+						</div>
+						<div class="comment pt-30">
+							<p>
+								все четко, работа сделана. доп консультации получены.
+								рекомендую
+							</p>
+						</div>
+					</div>
+
+					<!-- Testimonail Item -->
+					<div class="testimonial-item">
+						<div class="media">
+							<img src="./img/fh.png" alt="">
+							<div class="content">
+								<h4>Андрей Михайловский</h4>
+								<p>Исправить отображение миниатюр на карточке товара</p>
+							</div>
+						</div>
+						<div class="comment pt-30">
+							<p>Проект выполнен быстро и без лишних вопросов. Исполнитель компетентен.
+							</p>
+						</div>
+					</div>
+
+					<div class="testimonial-item">
+						<div class="media">
+							<img src="./img/pr.jpg" alt="">
+							<div class="content">
+								<h4>Менеджеры anycar.rent</h4>
+								<p>Онлайн-бронирование авто</p>
+							</div>
+						</div>
+						<div class="comment pt-30">
+							<p>
+								Благодарим за выполненную работу! Разработчики всегда на связи, ответят на все вопросы и проконсультируют. Продолжаем сотрудничество.
+							</p>
+						</div>
+					</div>
+
+					<!-- Testimonail Item -->
+					<div class="testimonial-item">
+						<div class="media">
+							<img src="./img/fh.png" alt="">
+							<div class="content">
+								<h4>sky sky</h4>
+								<p>Переделать с нуля каркас для сайта</p>
+							</div>
+						</div>
+						<div class="comment pt-30">
+							<p>
+								Хорошо сделан проект. Все правки делались очень быстро. Андрей помог продумать некоторые сложные елементы, додуманные заказчиком уже во время выполнения. Все хорошо, приятно иметь дело. Спасибо.
+							</p>
+						</div>
+					</div>
+					
+					<div class="testimonial-item">
+						<div class="media">
+							<img src="./img/pr.jpg" alt="">
+							<div class="content">
+								<h4>praca366</h4>
+								<p>Доробити сайт та внести правки</p>
+							</div>
+						</div>
+						<div class="comment pt-30">
+							<p>
+								Дякую, робота зроблена в повному обсязі
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Testimonial Row End -->
+
+			<!-- Price Row Start -->
+			<div class="row mt-100 mb-60">
+
+				<!-- Header Block -->
+				<div class="col-md-12">
+					<div class="header-box mb-50">
+						<h3>Стоимость работы</h3>
+					</div>
+				</div>
+
+				<!-- Price Item -->
+				<div class="col-sm-12">
+					<div class="price box">
+						<p class="text-center"><b>От 550$/месяц</b></p>
+						<p>При почасовой работе рейт: <b>4,5 - 6$/ час</b> в зависимости от задач.<br>
+							Верстка - <b>4,5$ - 5$</b> <br>
+							Javascript/Vue - <b>6$</b> <br>
+							<br>
+							Есть вариант поэтапной работы. Для этого делим ее на части и оцениваем каждый этап работы отдельно.<br>
+							<br>
+							Вариант работы, а также стоимость комплексных решений обсуждается индивидуально
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- Price Row End -->
+		</div>
+	</section>
+
+	<!-- Resume Section -->
+	<section class="resume section" data-simplebar>
+		<div class="container">
+			<div class="header-page mt-70">
+				<i class="fas fa-address-card icon-page"></i>
+				<i class="far fa-times-circle close-page" data-tooltip="close page" data-position="left"></i>
+				<h2>Резюме</h2>
+			</div>
+
+			<!-- Experience & Education Row Start -->
+			<div class="row mt-100 mob-mt">
+
+				<!-- Experience Column Start -->
+				<div class="col-sm-12">
+
+					<!-- Header Block -->
+					<p>Ф.И.О.: Заяц Андрей Витальевич</p>
+					<p>Дата рождения: 24 августа 1997</p>
+					<p>
+						Занимаюсь разработкой с нуля разных по сложности проектов на Laravel в паре с back-end'om.
+						Также могу отдельно делать дизайн/верстку/js-логику для проектов, имею хороший опыт в разработке
+						инвестиционных и высокодоходных проектов, корпоративных сайтов, платформ/маркетплейсов,
+						высоконагруженых проектов.
+					</p>
+					<ul>
+						<li>- умею слушать другого человека, задавать уточняющие вопросы</li>
+						<li>- умею вести деловую переписку</li>
+						<li>- не выхожу из себя, достаточно спокойный</li>
+						<li>- умею планировать свое рабочее время</li>
+						<li>- стремлюсь постоянно обучаться новому, осваивать полезные технологии.</li>
+					</ul>
+				</div>
+				<!-- Experience Column End -->
+
+				<!-- Education Column Start -->
+				<div class="col-sm-12">
+
+					<!-- Header Block -->
+					<div class="header-box mt-50 mb-50 mob-box-mt">
+						<h3>Образование и опыт работы</h3>
+					</div>
+
+					<div class="experience box">
+						<div class="bord-l">
+							<!-- Education Item -->
+							<div class="item">
+								<div class="main">
+									<h4>Обучение и фриланс</h4>
+									<p><i class="far fa-calendar-alt"></i>2017г.</p>
+								</div>
+								<p>Приобретение навыков верстки, сделал первые работы для портфолио, первые заказы на
+									фрилансе. Освоение бутстрапа и js. Первый проект по инвестициям в криптовалюту.
+								</p>
+							</div>
+							<div class="item">
+								<div class="main">
+									<h4>Инвестиционные проекты</h4>
+									<p><i class="far fa-calendar-alt"></i>2018г.</p>
+								</div>
+								<p>Окончил курсы по JS (г.Чернигов) комп.академия ШАГ</p>
+								<p>Разработка проектов связанных с облачным майнингом и сайтов для работы со
+									смарт-контрактами</p>
+								<p>Верстка под Laravel, выполнение небольших заказов на фриланс биржах, создание простых
+									скриптов, наполнение сайта контентом и прочее</p>
+							</div>
+							<div class="item">
+								<div class="main">
+									<h4>Окончание университета</h4>
+									<p><i class="far fa-calendar-alt"></i>2018г.</p>
+								</div>
+								<p>Национальный университет «Черниговский коллегиум» имени Т. Г. Шевченко
+									Факультет: физ.мат.
+									Специальность: Информатика и английский, Чернигов
+									Бакалавр, с 09.2014 по 06.2018 (3 года 9 месяцев)</p>
+							</div>
+							<div class="item">
+								<div class="main">
+									<h4>Фриланс, работа с дизайном</h4>
+									<p><i class="far fa-calendar-alt"></i>2018г.</p>
+								</div>
+								<p>Работаю с SCSS, начали использовать GIT, помимо других задач делаю баннеры и макеты в
+									PSD формате.
+									Создание лендингов. В декабре - начало работы над небольшой соц.сетью по спортивной
+									тематике. Разработана система подбора тренировки для пользователя в зависимости от
+									теста, который он пройдет.
+									Предусмотрен выбор оптимальной программы тренировки, более легкой и усиленной.
+									Создана система уникальной тренировки в зависимости от параметров пользователя</p>
+							</div>
+							<div class="item">
+								<div class="main">
+									<h4>Крупные проекты</h4>
+									<p><i class="far fa-calendar-alt"></i>2019г.</p>
+								</div>
+								<p>В марте после успешной сдачи проекта "Онлайн сервис для тренировок дома" работаю с
+									версткой двух инвест проектов, после чего 3месяца над проектом get-metrics, который
+									предоставляет инструменты для
+									увеличения поискового трафика, исследования конкурентов и мониторинга ниши клиента.
+									Были задачи как с дизайном,так и с версткой и js-системами в этом проекте.
+
+								</p>
+								<p>Проект "Any-car.rent - Аренда частных авто" - Front-end developer</p>
+								<p>Создание своего сайта-студии</p>
+								<p>Усовершенствование навыков</p>
+								<p>Начало работы с Vue.js</p>
+								<p>Разработка корпоративных сайтов</p>
+								<p>Ознакомление с продвижением сайтов</p>
+								<p>Прохождение нескольких уроков онлайн курса подготовки специалистов в Andersen (js). Потом был приглашен на работу над турагенством Sakums для разработки
+									нового сайта в качестве Front-end developer (никак не связано с Andersen)</p>
+							</div>
+							<!-- Education Item -->
+
+						</div>
+					</div>
+				</div>
+				<!-- Education Column End -->
+			</div>
+			<!-- Experience & Education Row End -->
+
+			<!-- Skills Row Start -->
+			<div class="row mt-100">
+
+				<!-- Header Block -->
+				<div class="col-md-12">
+					<div class="header-box mb-50">
+						<h3>Навыки</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="box skills">
+				<div class="row">
+					<div class="col-lg-6 col-sm-6">
+
+						<!-- Skill Item -->
+						<div class="skill-item">
+							<h4 class="progress-title">HTML5</h4>
+							<div class="progress">
+								<div class="progress-bar" style="width:98%">
+									<div class="progress-value">98%</div>
+								</div>
+							</div>
+						</div>
+						<!-- Skill Item -->
+						<div class="skill-item">
+							<h4 class="progress-title">UI/UX designer</h4>
+							<div class="progress">
+								<div class="progress-bar" style="width:84%">
+									<div class="progress-value">84%</div>
+								</div>
+							</div>
+						</div>
+
+
+						<!-- Skill Item -->
+						<div class="skill-item">
+							<h4 class="progress-title">CSS3/SCSS</h4>
+							<div class="progress">
+								<div class="progress-bar" style="width:90%">
+									<div class="progress-value">90%</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+					<div class="col-lg-6 col-sm-6">
+
+
+
+
+						<!-- Skill Item -->
+						<div class="skill-item">
+							<h4 class="progress-title">JavaScript</h4>
+							<div class="progress">
+								<div class="progress-bar" style="width:74%">
+									<div class="progress-value">74%</div>
+								</div>
+							</div>
+						</div>
+
+
+						<!-- Skill Item -->
+						<div class="skill-item">
+							<h4 class="progress-title">Photoshop</h4>
+							<div class="progress">
+								<div class="progress-bar" style="width:85%">
+									<div class="progress-value">85%</div>
+								</div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<h4 class="progress-title">VUE.js</h4>
+							<div class="progress">
+								<div class="progress-bar" style="width:35%">
+									<div class="progress-value">35%</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Skills Row End -->
+
+			<!-- Work Process Row Start -->
+			<div class="row mt-100">
+			</div>
+
+			<div class="box work-process mb-100">
+				<div class="row">
+					<div class="col-lg-4 col-sm-12 ltr">
+
+						<!-- Working Process Item-->
+						<div class="single-wp width-sm process-1">
+							<p class="wp-step">01</p>
+							<h4 class="wp-title">Обсуждение деталей</h4>
+							<p>Чтобы начать проект, нужно составить техзадание или четко оговорить условия работы</p>
+						</div>
+
+						<!-- Working Process Item-->
+						<div class="single-wp width-sm process-2">
+							<p class="wp-step">02</p>
+							<h4 class="wp-title">Начало работы</h4>
+							<p>После утверждения условий, мы можем работать или через сейф(резервация средств), или по предоплате, или по договору. На некоторые задачи готов рассмотреть вариант работы с постоплатой.</p>
+						</div>
+					</div>
+
+					<div class="col-lg-4 hidden-sm">
+
+						<!-- Working Process Circle-->
+						<div class="wp-circle">
+							<h4>Рабочий процесс</h4>
+							<span class="dots top-l"></span>
+							<span class="dots bottom-l"></span>
+							<span class="dots top-r"></span>
+							<span class="dots bottom-r"></span>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-sm-12 rtl">
+
+						<!-- Working Process Item-->
+						<div class="single-wp width-sm process-3">
+							<p class="wp-step">03</p>
+							<h4 class="wp-title">Решение задачи</h4>
+							<p>Реализация проекта. Вы можете в любой момент отследить процесс выполнения работы. Я всегда на связи и никуда не пропадаю</p>
+						</div>
+
+						<!-- Working Process Item-->
+						<div class="single-wp width-sm process-4">
+							<p class="wp-step">04</p>
+							<h4 class="wp-title">Тестирование</h4>
+							<p>Проверяю проект на соответствие тз и наличие ошибок. Вы получаете качественную работу</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Work Process Row End -->
+		</div>
+	</section>
+
+
+	<!-- Portfolio Section -->
+	<section class="portfolio section" data-simplebar>
+		<div class="container">
+			<div class="header-page mt-70">
+				<i class="fas fa-briefcase icon-page"></i>
+				<i class="far fa-times-circle close-page" data-tooltip="close page" data-position="left"></i>
+				<h2>Портфолио</h2>
+			</div>
+			<p class="portfolio_sub">Для некоторых проектов представлена ознакомительная версия. Вы можете обратиться ко мне, чтобы узнать подробнее о конкретной задаче, стоимости, а также посмотреть проект более детально</p>
+			<!-- Portfolio Filter Row Start -->
+			<div class="row mt-100 portfolio_row">
+				<div class="col-lg-12 col-sm-12 portfolio-filter">
+					<ul>
+						<li class="active" data-filter="*">Все</li>
+						<li data-filter=".design">Дизайн</li>
+						<li data-filter=".html-coding">Вёрстка</li>
+						<li data-filter=".javascript">Javascript</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Portfolio Filter Row End -->
+
+			<!-- Portfolio Item Row Start -->
+			<div class="row portfolio-items mt-100 mb-100">
+
+				<!-- Portfolio Item -->
+				<div class="item col-lg-4 col-sm-6 javascript html-coding">
+					<figure>
+						<img alt="png" src="./img/portfolio/sakums.jpg">
+						<figcaption>
+							<h3>Сайт для турагенства Sakums</h3>
+							<p>front-end</p>
+							<i class="fas fa-image"></i>
+							<a target="_blank" href="https://new.sakums.com.ua"></a>
+						</figcaption>
+					</figure>
+				</div>
+
+				<!-- Portfolio Item -->
+				<div class="item col-lg-4 col-sm-6 html-coding javascript design">
+					<figure>
+						<img alt="" src="./img/portfolio/sierra.jpg">
+						<figcaption>
+							<h3>Sierra Studio</h3>
+							<p>front-end</p>
+							<i class="fas fa-image"></i>
+							<a target="_blank" href="https://sierra-studio.tech"></a>
+						</figcaption>
+					</figure>
+				</div>
+
+				<!-- Portfolio Item -->
+				<div class="item col-lg-4 col-sm-6 html-coding javascript design">
+					<figure>
+						<img alt="" src="./img/portfolio/design3.jpg">
+						<figcaption>
+							<h3>Ethereum Silver - Инвестиции в смарт-контракт</h3>
+							<p>front-end</p>
+							<i class="fas fa-image"></i>
+							<a target="_blank" href="./projects/EthereumSilver/index.html"></a>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="item col-lg-4 col-sm-6 html-coding">
+					<figure>
+						<img alt="" src="./img/portfolio/design2.jpg">
+						<figcaption>
+							<h3>BCinvest - Выгодные частные инвестиции</h3>
+							<p>html-coding</p>
+							<i class="fas fa-image"></i>
+							<a target="_blank" href="./projects/Bcinvestnew/index.html"></a>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="item col-lg-4 col-sm-6 html-coding">
+					<figure>
+						<img alt="png" src="./img/portfolio/praca366.jpg">
+						<figcaption>
+							<h3>Доработка верстки и js</h3>
+							<p>html-coding</p>
+							<i class="fas fa-image"></i>
+							<a target="_blank" href="https://www.praca366.com"></a>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="item col-lg-4 col-sm-6 html-coding javascript design">
+					<figure>
+						<img alt="png" src="./img/portfolio/design10.jpg">
+						<figcaption>
+							<h3>MoneyWay - финансовая платформа</h3>
+							<p>front-end</p>
+							<i class="fas fa-image"></i>
+							<a target="_blank" href="./projects/MoneyWay/index.html"></a>
+						</figcaption>
+					</figure>
+				</div>
+
+
+				<div class="item col-lg-4 col-sm-6 javascript">
+					<figure>
+						<img alt="png" src="./img/portfolio/demorus.jpg">
+						<figcaption>
+							<h3>Тренажеры на js</h3>
+							<p>javascript</p>
+							<i class="fas fa-image"></i>
+							<a target="_blank" href="./projects/Demorus_tests/index.html"></a>
+						</figcaption>
+					</figure>
+				</div>
+
+
+				<div class="item col-lg-4 col-sm-6 javascript">
+					<figure>
+						<img alt="png" src="./img/portfolio/envieq.jpg">
+						<figcaption>
+							<h3>Калькулятор расчета мощности насоса</h3>
+							<p>javascript</p>
+							<i class="fas fa-image"></i>
+							<a target="_blank" href="./projects/ENVIEQ_CALC/index.html"></a>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="item col-lg-4 col-sm-6 html-coding">
+					<figure>
+						<img alt="png" src="./img/portfolio/hronoil.jpg">
+						<figcaption>
+							<h3>Landing page HronOil</h3>
+							<p>html-coding</p>
+							<i class="fas fa-image"></i>
+							<a target="_blank" href="./projects/Hron_oil/index.html"></a>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="item col-lg-4 col-sm-6 html-coding">
+					<figure>
+						<img alt="png" src="./img/portfolio/seo_course.jpg">
+						<figcaption>
+							<h3>СЕО курсы</h3>
+							<p>html-coding</p>
+							<i class="fas fa-image"></i>
+							<a target="_blank" href="./projects/SEOcourse/index.html"></a>
+						</figcaption>
+					</figure>
+				</div>
+
+
+				<div class="item col-lg-4 col-sm-6 html-coding javascript">
+					<figure>
+						<img alt="png" src="./img/portfolio/sharent_main.jpg">
+						<figcaption>
+							<h3>Sharent - Аренда частных авто</h3>
+							<p>front-end</p>
+							<i class="fas fa-image"></i>
+							<a target="_blank" href="./item_sharent.html"></a>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="item col-lg-4 col-sm-6 html-coding">
+					<figure>
+						<img alt="png" src="./img/portfolio/unitech.jpg">
+						<figcaption>
+							<h3>Верстка нескольких страниц под посадку на CMS</h3>
+							<p>html-coding</p>
+							<i class="fas fa-image"></i>
+							<a target="_blank" href="./projects/UniTech/index.html"></a>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="item col-lg-4 col-sm-6 html-coding">
+					<figure>
+						<img alt="png" src="./img/portfolio/voronka.jpg">
+						<figcaption>
+							<h3>Воронки для продаж в одной стилистике</h3>
+							<p>html-coding</p>
+							<i class="fas fa-image"></i>
+							<a target="_blank" href="./projects/Voronka/index.html"></a>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="item col-lg-4 col-sm-6 html-coding">
+					<figure>
+						<img alt="png" src="./img/portfolio/zeus.jpg">
+						<figcaption>
+							<h3>Landing page - Zeus Smart Contract</h3>
+							<p>html-coding</p>
+							<i class="fas fa-image"></i>
+							<a target="_blank" href="./projects/ZeusSmartContract/index.html"></a>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="item col-lg-4 col-sm-6 html-coding">
+					<figure>
+						<img alt="png" src="./img/portfolio/eyecare.jpg">
+						<figcaption>
+							<h3>Верстка сайта Eyecare cosmetics</h3>
+							<p>html-coding</p>
+							<i class="fas fa-image"></i>
+							<a target="_blank" href="https://sdm.ua/eye-care"></a>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="item col-lg-4 col-sm-6 html-coding design javascript">
+					<figure>
+						<img alt="png" src="./img/portfolio/get-metrics.jpg">
+						<figcaption>
+							<h3>Дизайн и верстка главной страницы. Доработки личного кабинета (JS)</h3>
+							<p>front-end</p>
+							<i class="fas fa-image"></i>
+							<a target="_blank" href="./projects/Get-metrics/index.html"></a>
+						</figcaption>
+					</figure>
+				</div>
+
+						
+			<!-- Portfolio Item Row End -->
+		</div>
+	</section>
+
+
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/isotope.pkgd.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/simplebar.js"></script>
+	<script src="./js/owl.carousel.min.js"></script>
+	<script src="./js/jquery.magnific-popup.min.js"></script>
+	<script src="./js/jquery.animatedheadline.min.js"></script>
+	<script src="./js/main.js"></script>
 </body>
+
 </html>
