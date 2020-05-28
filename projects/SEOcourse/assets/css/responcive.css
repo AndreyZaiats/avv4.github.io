@@ -1,0 +1,443 @@
+@media (max-width: 1250px) {
+    .header__bottom  {
+        padding-left: 0;
+    }
+    .header__right img {
+        display: none
+    }
+    .list__items, .format__items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .format__item {
+        width: 300px;
+    }
+    .list__item, .format__item {
+        padding-top: 50px;
+    }
+    .course__content, .for__who, .sale, .facilities, .format, .learn, .about__right {
+        padding: 70px 50px 100px 50px;
+    }
+    .facilities__item, .facilities__item:nth-child(3n) {
+        margin: 50px 50px 0 0;
+    }
+    .facilities__item:nth-child(2n) {
+        margin: 50px 0 0 0;
+    }
+    #abs__img {
+        display: none;
+    }
+    #head {
+        padding: 0 6% 0 6%;
+    }
+}
+
+@media(max-width: 1207px) {
+    .sale__conent {
+        display: block;
+    }
+    .sale__conent p {
+        padding-left: 0;
+        padding-top: 50px;
+    }
+}
+@media(max-width: 1000px) {
+    .about {
+        flex-direction: row-reverse;
+    }
+    #about__man {
+        display: none;
+    }
+    header {
+        flex-wrap: wrap;
+        max-width: 800px;
+        justify-content: flex-start;
+        margin: 0 auto;
+    }
+    .header__sub {
+        padding: 0 50px 0 50px;
+    }
+    .header__phone a {
+        padding-right: 50px;
+
+    }
+    .header__phone, .header__btn {
+        margin-top: 50px;
+    }
+    .social, .header__sub {
+        align-self: flex-end;
+    }
+    .footer__content .social {
+        align-self: center;
+    }
+    .footer__phone, .footer__mail {
+        align-self: center;
+    }
+}
+@media(max-width: 905px) {
+    .result__left img {
+        display: none;
+    }
+    .result__form h3 {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    h2, .for__who h2, .format h2 {
+        font-size: 43px;
+        font-weight: 700;
+        line-height: 70.93px;
+    }
+    h3,.course__list h3 {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 46.81px;
+    }
+    p, .about__course p, .head__left p {
+        font-size: 18px;
+    }
+    li {
+        font-size: 18px;
+    }
+    header {
+        padding: 50px 10% 0 10%;
+    }
+    .head__content {
+        padding: 60px 10% 0 10%;
+    }
+    header {
+        margin: 0;
+    }
+    .about__course h2 {
+        font-size: 43px;
+    }
+    .for__list__all {
+        flex-wrap: wrap;
+    }
+    .for__business{
+        padding-bottom: 50px;
+    }
+    .for__who h2::after, .facilities h2::after {
+        display: none;
+    }
+    .facilities__item, .facilities__item:nth-child(3n), .facilities__item:nth-child(2n) {
+        margin: 50px 0 0 0;
+    }
+}
+@media(max-width: 755px) {
+    .social {
+        margin-right: 30px;
+    }
+    header {
+        margin: 0 auto;
+    }
+    .results__right {
+        padding: 60px 10% 0 10%;
+    }
+    .learn__items {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width: 705px) {
+    .sale form {
+        flex-wrap: wrap;
+    }
+    .sale form button {
+        margin-top: 20px;    
+    }
+    .bottom__block:last-child {
+        padding-right: 0;
+    }
+}
+@media(max-width: 601px) {
+    .header__sub {
+        padding: 30px 100px 0 0;
+    }
+    .footer__content {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 10% 0 10%;
+    }
+}
+@media(max-width: 559px) {
+    .sale__conent form .mail {
+        margin: 20px 50px 0 0;
+    }
+    h1 {
+        font-size: 37px;
+    }
+    h2, .for__who h2, .format h2 {
+        font-size: 43px;
+        font-weight: 700;
+        line-height: 70.93px;
+    }
+    h3,.course__list h3 {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 46.81px;
+    }
+    p, .about__course p {
+        font-size: 18px;
+    }
+    .header__bottom {
+        flex-wrap: wrap;
+    }
+    .bottom__block {
+        padding-top: 30px;
+    }
+    .results__right {
+        padding: 60px 10% 0 10%;
+        max-width: 100%;
+    }
+    .format h2 {
+        text-align: center;
+    }
+    .result__form__input, .result__form__last {
+        flex-wrap: wrap;
+    }
+
+}
+@media (max-width: 543px) {
+    .group .select {
+        margin: 30px 20px 0 0;
+    }
+    .select-options li {
+        font-size: 13px;
+    }
+}
+@media (max-width: 508px) {
+    .social {
+        padding-top: 30px;
+    }
+    .header__phone, .header__btn {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 500px) {
+    .bottom__block {
+        padding-right: 0;
+    }
+    .header__bottom {
+        justify-content: center;
+        flex-direction: column;
+    }
+    h1,  {
+        font-size: 30px;
+        line-height: inherit;
+    }
+    h2, .for__who h2, .format h2, .facilities h2, .results__right h2  {
+        font-size: 33px;
+        font-weight: 700;
+        line-height: inherit;
+    }
+    .results__right p {
+        padding: 30px 0 30px 0;
+    }
+    .about__right {
+        padding-right: 0;
+    }
+    #result {
+        background: url(../../assets/img/4.jpg) no-repeat right;
+        background-size: cover;
+    }
+    .footer__content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__content div {
+        padding: 30px 0 0 0;
+    }
+    .footer__content .social {
+        margin-right: 0;
+    }
+    .logo {
+        text-align: center;
+        align-self: center;
+        padding-top: 0;
+    }
+    header {
+        justify-content: center;
+        text-align: center;
+        padding: 50px 0 0 0;
+        position: relative;
+        z-index: 2;
+    }
+    .header__sub {
+        padding: 0 0 0 0;
+        font-size: 14px;
+        max-width: 200px;
+    }
+    .social {
+        padding-top: 0px;
+        margin-right: 0;
+        flex-direction: column;
+        margin-bottom: -30px;
+    }
+    .social a {
+        padding-bottom: 15px;
+    }
+    .header__phone a {
+        padding-right: 0;
+        font-size: 17px;
+    }
+    .list__item {
+        padding-right: 0;
+    }
+    .p_bottom, .learn__items p {
+        font-size: 18px;
+    }
+    .header__phone, .header__btn {
+        max-width: 50%;
+    }
+    .head__left {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+    .head__left form {
+        justify-content: center;
+    }
+    .head__left .group {
+        max-width: 210px;
+    }
+    .header-mob-left {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 50px;
+    }
+    .header__bottom {
+        flex-wrap: wrap;
+        max-height: 300px;
+        max-width: 400px;
+        margin-top: 40px;
+        padding-top: 0;
+        align-content: space-between;
+    }
+    .bottom__block span {
+        font-size: 25px;
+    }
+    .bottom__block span img {
+        max-width: 35px;
+    }
+    .bottom__block p {
+        font-size: 10px;
+    }
+    .bottom__block {
+        max-width: 30%;
+        align-self: center;
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+    .group .select {
+        margin: 25px 0 0 0;
+    }
+    .input__number input, .group .select, .group, .header-mob-left button {
+        width: 300px;
+    }
+    .head__left .group {
+        max-width: 300px;
+    }
+
+
+    .list__items {
+        flex-direction: column;
+    }
+    h2, .about h2, .about__course h2, .sale h2, .result__form h3 {
+        font-size: 27px;
+        line-height: inherit;
+    }
+    .sale h2 {
+        padding-top: 50px;
+    }
+    h3, .about h3, .for__list__all h3, .for__who p {
+        font-size: 22px;
+    }
+    h4, .about h4 {
+        font-size: 16px;
+    }
+
+
+    .about__course {
+        padding-top: 50px;
+    }
+    .course__content, .for__who, .sale, .facilities, .format, .learn, .about__right {
+        padding-top: 0;
+    }
+    p, .about__course p {
+        font-size: 16px;
+    }
+    .about__course p {
+        max-width: 100%;
+    }
+    .sale {
+        justify-content: center;
+        text-align: center;
+    }
+    .sale form {
+        justify-content: center;
+    }
+    .sale__conent form .mail {
+        margin: 20px 0 0 0;
+        width: 300px;
+    }
+    button {
+        width: 300px;
+    }
+    .format__item  {
+        padding-right: 0;
+    }
+    .p_bottom {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .social__footer {
+        flex-direction: row;
+        align-self: auto;
+    }
+    footer {
+        text-align: center;
+    }
+    .social__footer a:last-child {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 404px) {
+    .header__phone a {
+        font-size: 16px;
+    }
+}
+@media (max-width: 394px) {
+    .logo p {
+        font-size: 12px;
+    }
+    .logo span {
+        font-size: 25px;
+        line-height: inherit;
+    }
+}
+@media (max-width: 385px) {
+    .social {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+    .social a {
+        padding-bottom: 0;
+    }
+    .header__phone, .header__btn {
+        max-width: 100%;
+    }
+    .social a:last-child {
+        padding-right: 20px;
+    }
+    .header__sub {
+    padding: 27px 0 0 0;
+    }
+    .input__number input, .group .select, .group, .header-mob-left button {
+        width: 250px;
+    }
+    .head__content {
+        padding: 60px 5% 0 5%;
+    }
+}

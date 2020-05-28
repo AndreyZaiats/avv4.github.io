@@ -1,0 +1,5337 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Merriweather:700,900|Open+Sans:300,400&display=swap");
+@font-face {
+  font-family: "Rubik";
+  src: url(../fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Rubik-Bold";
+  src: url(../fonts/Rubik-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Simple-Line-Icons';
+  /* Гарнитура шрифта */
+  src: url(/fonts/Simple-Line-Icons.ttf);
+  /* Путь к файлу со шрифтом */
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 700;
+}
+
+body h1 {
+  font-size: 2.6rem;
+}
+
+body h2 {
+  font-size: 2.25rem;
+}
+
+body h3 {
+  font-size: 1.75rem;
+}
+
+body h4 {
+  font-size: 1.5rem;
+}
+
+body h5 {
+  font-size: 1.25rem;
+  font-family: "Rubik-Bold";
+}
+
+body h6 {
+  font-size: 1rem;
+  font-family: "Rubik-Bold";
+}
+
+body p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+body ul {
+  -webkit-padding-start: 0px;
+}
+
+body ul li {
+  list-style: none;
+}
+
+body a {
+  text-decoration: none;
+  font-family: "Rubik-Bold";
+  letter-spacing: .01em;
+}
+
+body a:hover {
+  text-decoration: none;
+}
+
+body span {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+.navbar-dark .navbar-toggler:focus {
+  outline: none !important;
+}
+
+.main_button {
+  padding: 0.7rem 1.8rem;
+  cursor: pointer;
+  border-radius: 3px !important;
+  text-align: center;
+  border: none;
+  font-size: 0.9rem;
+  font-family: "Rubik-Bold";
+  color: #fff;
+  letter-spacing: .01em;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #59d389;
+}
+
+.main_button:hover {
+  color: #fff;
+  background-color: #42e181;
+}
+
+.main_button:focus {
+  outline: none;
+}
+
+#section_account .main_button {
+  background-color: #35b668;
+}
+
+#section_account .main_button:hover {
+  color: #fff;
+  background-color: #59d389;
+}
+
+.secondary_button {
+  padding: 0.7rem 1.8rem;
+  cursor: pointer;
+  border-radius: 3px !important;
+  text-align: center;
+  border: 1px solid #59d389;
+  font-size: 0.9rem;
+  font-family: "Rubik";
+  color: #fff;
+  letter-spacing: .01em;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: transparent;
+}
+
+.secondary_button:hover {
+  color: #fff;
+  background-color: #59d389;
+}
+
+.secondary_button:focus {
+  outline: none;
+}
+
+.datepickers-container .datepicker--day-name {
+  color: #000;
+}
+
+.datepickers-container .my-class-act {
+  color: #59d389;
+}
+
+.datepickers-container .datepicker--cell.-selected-, .datepickers-container .datepicker--cell.-selected-.-current- {
+  color: white;
+  background-color: #59d389;
+}
+
+.datepickers-container .datepicker--cell.-disabled- {
+  color: #aeaeae;
+}
+
+.datepickers-container .datepicker--cell-day.-other-month- {
+  color: #dedede;
+}
+
+.datepickers-container .my-class-dis {
+  color: #ffc5c5 !important;
+}
+
+#section1 .navbar-dark .navbar-toggler-icon {
+  background-image: url(/img/menu.png);
+}
+
+#section1 .header-main {
+  background-color: #231f20;
+  padding: 6px 0;
+}
+
+#section1 nav .navbar-brand {
+  color: white;
+  font-size: 1.35rem;
+  top: 1px;
+  position: relative;
+}
+
+#section1 .nav-buttons {
+  padding: 5px;
+  margin-left: 1rem;
+}
+
+#section1 .nav-buttons-desktop {
+  display: block;
+}
+
+#section1 .nav-buttons-smart {
+  display: none;
+}
+
+#section1 #navbarNavDropdown .navbar-nav .nav-item .nav-link {
+  color: white;
+  margin: 0px 10px;
+  font-size: 0.9rem;
+}
+
+#section1 .main_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem 0;
+  padding-bottom: 6rem;
+  background-image: url(../img/back.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#section1 .main_content h1 {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  margin-top: 4rem;
+}
+
+#section1 .main_content h2 {
+  font-family: "Open Sans";
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#section1 .main_content .select_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 23px;
+  margin: 4rem 0;
+}
+
+#section1 .main_content .select_group .groupcity {
+  position: relative;
+}
+
+#section1 .main_content .select_group .groupcity select {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px 20px;
+  font-family: "Open Sans";
+}
+
+#section1 .main_content .select_group .groupcity select:focus {
+  outline: none;
+}
+
+#section1 .main_content .select_group .groupcity .select2.select2-container {
+  width: 19rem !important;
+  height: 3rem;
+  left: 42px;
+}
+
+#section1 .main_content .select_group .groupcity .select2.select2-container:focus {
+  outline: none;
+}
+
+#section1 .main_content .select_group .groupcity .select2.select2-container .select2-selection {
+  border: none;
+  height: 3rem;
+}
+
+#section1 .main_content .select_group .groupcity .select2.select2-container .select2-selection:focus {
+  outline: none;
+}
+
+#section1 .main_content .select_group .groupcity .select2.select2-container .select2-selection__rendered {
+  line-height: 49px;
+}
+
+#section1 .main_content .select_group .groupcity .city_png {
+  position: absolute;
+  top: 50%;
+  left: 28px;
+  height: 1rem;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+#section1 .main_content .select_group .groupdata {
+  position: relative;
+}
+
+#section1 .main_content .select_group .groupdata input {
+  padding: 10px 20px;
+  font-family: "Open Sans";
+  width: 20rem;
+  border: none;
+  padding-left: 40px;
+}
+
+#section1 .main_content .select_group .groupdata input:focus {
+  outline: none;
+}
+
+#section1 .main_content .select_group .groupdata .data_png {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  height: 1rem;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+#section1 .main_content .select_group .find_auto {
+  border-radius: 23px !important;
+  text-transform: uppercase;
+  border: 1px solid #59d389;
+  padding: 0.6rem 1.5rem;
+  position: relative;
+  top: 0px;
+  font-size: 0.8rem;
+}
+
+#section1 .main_content .socials1 {
+  margin-top: 2rem;
+}
+
+#section1 .main_content .socials1 a {
+  margin: 0 7px;
+}
+
+#section1 .main_content .socials1 a img {
+  height: 1.3rem;
+  margin-right: 10px;
+  position: relative;
+  top: -1px;
+}
+
+#section1 .main_content .socials1 .enter_google {
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  border-radius: 3px !important;
+  text-align: center;
+  border: 1px solid transparent;
+  font-size: 0.9rem;
+  font-family: "Rubik";
+  color: #231f20;
+  letter-spacing: .01em;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: white;
+}
+
+#section1 .main_content .socials1 .enter_google span {
+  font-weight: bold;
+}
+
+#section1 .main_content .socials1 .enter_google:hover {
+  color: #231f20;
+  background-color: white;
+}
+
+#section1 .main_content .socials1 .enter_google:focus {
+  outline: none;
+}
+
+#section1 .main_content .socials1 .enter_facebook {
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  border-radius: 3px !important;
+  text-align: center;
+  border: 1px solid transparent;
+  font-size: 0.9rem;
+  font-family: "Rubik";
+  color: #fff;
+  letter-spacing: .01em;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #3b5998;
+}
+
+#section1 .main_content .socials1 .enter_facebook span {
+  font-weight: bold;
+}
+
+#section1 .main_content .socials1 .enter_facebook:hover {
+  color: #fff;
+  background-color: #3b5998;
+}
+
+#section1 .main_content .socials1 .enter_facebook:focus {
+  outline: none;
+}
+
+#section2 {
+  padding: 4rem 0;
+  padding-bottom: 5rem;
+}
+
+#section2 h2 {
+  text-align: center;
+  position: relative;
+}
+
+#section2 h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 65px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  height: 1px;
+  background-color: #3b5998;
+  width: 60px;
+}
+
+#section2 .s2_main {
+  max-width: 100%;
+}
+
+#section2 .s2_text h6 {
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+}
+
+#section2 .s2_text p {
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+
+#section2 .s2_text .main_button {
+  margin-top: 2rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0.9rem 1.8rem;
+}
+
+#section3 {
+  padding: 4rem 0;
+  background-color: #fafafe;
+  padding-bottom: 9rem;
+}
+
+#section3 h2 {
+  text-align: center;
+  position: relative;
+}
+
+#section3 h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 65px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  height: 1px;
+  background-color: #3b5998;
+  width: 60px;
+}
+
+#section3 .card_auto {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #e3e3e5;
+  background-color: white;
+  margin-top: 1rem;
+  overflow-x: hidden;
+  padding-bottom: 0.6rem;
+}
+
+#section3 .card_auto .autopic {
+  height: 13.5rem;
+}
+
+#section3 .card_auto .carname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  margin-top: 0.2rem;
+}
+
+#section3 .card_auto .carname h6 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#section3 .card_auto .carname span {
+  font-family: "Rubik";
+}
+
+#section3 .card_auto .carstars {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0 20px;
+  margin-top: 0;
+}
+
+#section3 .card_auto .carstars img {
+  height: 0.8rem;
+  margin: 0 1px;
+}
+
+#section3 .card_auto .footer_card {
+  color: grey;
+  padding: 0 20px;
+  font-size: 0.9rem;
+}
+
+#section3 .main_button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0.9rem 1.8rem;
+  margin: 3rem 0;
+}
+
+#section3 .s3_haveauto {
+  background: url(../img/section3_footer.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 0.5rem;
+  border-radius: 4px;
+  position: absolute;
+  width: 1110px;
+}
+
+#section3 .s3_haveauto h2 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#section3 .s3_haveauto h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 65px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  height: 1px;
+  background-color: #fff;
+  width: 60px;
+}
+
+#section4 {
+  padding: 4rem 0;
+  background-color: white;
+  padding-top: 13rem;
+}
+
+#section4 .s4_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+}
+
+#section4 .s4_card h6 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#section4 .s4_card p {
+  text-align: center;
+}
+
+#section4 .s4_card img {
+  height: 4rem;
+}
+
+footer {
+  background-color: #231f20;
+  padding: 1rem 0;
+}
+
+footer .brand {
+  color: white;
+  font-size: 1.5rem;
+}
+
+footer .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .menu a {
+  margin: 3px 15px;
+  color: white;
+  font-size: 0.8rem;
+}
+
+footer .socials_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .socials_footer a img {
+  height: 2rem;
+  margin: 2px 7px;
+}
+
+section.auth {
+  min-height: 85vh;
+  background-color: white;
+  padding: 4rem 0;
+}
+
+section.auth .mainAuth {
+  text-align: center;
+  position: relative;
+}
+
+section.auth .submainAuth {
+  text-align: center;
+  margin: 1rem 0;
+  margin-bottom: 3rem;
+}
+
+section.auth .submainAuth a {
+  color: #1b9cff;
+  font-family: "Rubik";
+  text-decoration: underline;
+}
+
+section.auth .submainAuth a:hover {
+  color: #231f20;
+}
+
+section.auth .form_block {
+  margin: 2rem 0;
+  max-width: 70%;
+  margin: 2rem auto;
+}
+
+section.auth .form_block form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section.auth .form_block form .a_signin_column, section.auth .form_block form .a_signup_column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50%;
+}
+
+section.auth .form_block form .a_signin_column input, section.auth .form_block form .a_signup_column input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 5px 10px;
+  border: 1px solid #c9c9c9;
+}
+
+section.auth .form_block form .a_signin_column input:focus, section.auth .form_block form .a_signup_column input:focus {
+  outline: none;
+}
+
+section.auth .form_block form .a_signin_column .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before, section.auth .form_block form .a_signup_column .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #59d389;
+}
+
+section.auth .form_block form .a_signin_column .custom-control-input:focus ~ .custom-control-label::before, section.auth .form_block form .a_signup_column .custom-control-input:focus ~ .custom-control-label::before {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+section.auth .form_block form .a_signin_column .custom-control-label, section.auth .form_block form .a_signup_column .custom-control-label {
+  font-family: "Rubik";
+  font-size: 0.9rem;
+}
+
+section.auth .form_block form .a_signin_column .custom-control-label:focus, section.auth .form_block form .a_signup_column .custom-control-label:focus {
+  outline: none;
+}
+
+section.auth .form_block form .a_signin_column .labelbold, section.auth .form_block form .a_signup_column .labelbold {
+  font-weight: bolder;
+}
+
+section.auth .form_block form .a_signin_column .goEmail, section.auth .form_block form .a_signup_column .goEmail {
+  font-family: "Rubik";
+  color: #231f20;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+section.auth .form_block form .a_signin_column .goEmail:hover, section.auth .form_block form .a_signup_column .goEmail:hover {
+  text-decoration: underline;
+}
+
+section.auth .form_block form .a_signin_column button.main_button, section.auth .form_block form .a_signup_column button.main_button {
+  font-size: 0.9rem;
+  margin-top: 0.5rem !important;
+  padding: 0.6rem 1.5rem !important;
+}
+
+section.auth .form_block form .a_signin_column button.main_button:focus, section.auth .form_block form .a_signup_column button.main_button:focus {
+  outline: none;
+}
+
+section.auth .form_block form .a_sign_socials {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2.1rem;
+}
+
+section.auth .form_block form .a_sign_socials a {
+  margin: 5px 7px;
+  width: 15rem;
+  max-width: 100%;
+}
+
+section.auth .form_block form .a_sign_socials a img {
+  height: 1.3rem;
+  margin-right: 10px;
+  position: relative;
+  top: -1px;
+}
+
+section.auth .form_block form .a_sign_socials .enter_google {
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  border-radius: 3px !important;
+  text-align: left;
+  font-size: 0.9rem;
+  font-family: "Rubik";
+  color: #231f20;
+  letter-spacing: .01em;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: white;
+  border: 1px solid #c9c9c9;
+}
+
+section.auth .form_block form .a_sign_socials .enter_google span {
+  font-weight: bold;
+}
+
+section.auth .form_block form .a_sign_socials .enter_google:hover {
+  color: #231f20;
+  background-color: white;
+}
+
+section.auth .form_block form .a_sign_socials .enter_google:focus {
+  outline: none;
+}
+
+section.auth .form_block form .a_sign_socials .enter_facebook {
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  border-radius: 3px !important;
+  text-align: left;
+  border: 1px solid transparent;
+  font-size: 0.9rem;
+  font-family: "Rubik";
+  color: #fff;
+  letter-spacing: .01em;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #3b5998;
+}
+
+section.auth .form_block form .a_sign_socials .enter_facebook span {
+  font-weight: bold;
+}
+
+section.auth .form_block form .a_sign_socials .enter_facebook:hover {
+  color: #fff;
+  background-color: #3b5998;
+}
+
+section.auth .form_block form .a_sign_socials .enter_facebook:focus {
+  outline: none;
+}
+
+section.auth .accept {
+  text-align: center;
+  font-size: 0.9rem;
+  width: 32rem;
+  max-width: 100%;
+  margin: 5rem auto;
+}
+
+section.auth .accept a {
+  color: #1b9cff;
+  font-family: "Rubik";
+  text-decoration: underline;
+}
+
+.section1_account .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  background: url(/img/profile_arrow.png) no-repeat;
+  background-position: center;
+  border: none;
+  height: 1rem;
+  width: 1rem;
+  right: 0;
+  margin-left: -10px;
+  top: 7px;
+}
+
+.section1_account .header_search {
+  margin-left: 3rem;
+  background-color: #161616;
+  padding: 2px 3px;
+  padding-left: 7px;
+}
+
+.section1_account .header_search .select2-container {
+  width: 11.2rem !important;
+}
+
+.section1_account .header_search .select2-container:focus {
+  outline: none;
+}
+
+.section1_account .header_search .select2-selection__rendered {
+  color: #bbb;
+}
+
+.section1_account .header_search .select2-selection--single {
+  background-color: #161616;
+  border: none;
+}
+
+.section1_account .header_search .select2-selection--single:focus {
+  outline: none;
+}
+
+.section1_account .tire {
+  color: #bbb;
+  position: relative;
+  top: 2px;
+}
+
+.section1_account .group-inp-catalog {
+  position: relative;
+}
+
+.section1_account .group-inp-catalog .c_dark {
+  position: absolute;
+  left: 22px;
+  top: 6px;
+}
+
+.section1_account .group-inp-catalog .arrow {
+  position: absolute;
+  width: 9px;
+  height: 4px;
+  right: 22px;
+  top: 14px;
+}
+
+.section1_account .group-inp-catalog input {
+  background-color: #111;
+  border: none;
+  color: #bbb;
+  width: 13rem;
+  height: 100%;
+  line-height: 28px;
+  margin: 0 10px;
+  display: block;
+  padding-left: 43px;
+  padding-right: 33px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Rubik";
+}
+
+.section1_account .group-inp-catalog input:focus {
+  outline: none;
+}
+
+.section1_account .btn-profile {
+  margin-left: 1rem;
+}
+
+.section1_account .btn-profile .btn-secondary {
+  padding: 0;
+  background: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.section1_account .btn-profile .btn-secondary:focus {
+  outline: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+.section1_account .btn-profile .btn-secondary::after {
+  top: 9px;
+  position: relative;
+  border: none;
+  background: url(../img/profile_arrow.png) no-repeat;
+  background-position: center;
+  width: 1rem;
+  height: 1rem;
+  left: -1px;
+}
+
+.section1_account .btn-profile .btn-secondary img {
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.section1_account .btn-profile .dropdown-menu {
+  background-color: #59d389;
+  border: 0;
+  border-radius: 0;
+  padding: 1rem 0;
+  top: 51px;
+  -webkit-box-shadow: 0 0 10 #333;
+          box-shadow: 0 0 10 #333;
+}
+
+.section1_account .btn-profile .dropdown-menu .dropdown-item {
+  color: white;
+  padding: 7px 32px;
+  text-align: right;
+  font-family: "Rubik";
+  font-size: 0.9rem;
+}
+
+.section1_account .btn-profile .dropdown-menu .dropdown-item:focus {
+  outline: none;
+  background-color: #7deba8;
+}
+
+.section1_account .btn-profile .dropdown-menu .dropdown-item:active {
+  background-color: #7deba8;
+  color: white;
+}
+
+.section1_account .btn-profile .dropdown-menu .dropdown-item:hover {
+  background-color: #7deba8;
+  color: white;
+}
+
+.section1_account .header_search_smart {
+  display: none;
+}
+
+.section1_account .header_search_desktop {
+  display: block;
+}
+
+#section_account {
+  padding: 3rem 0;
+  background-color: #f7f9fc;
+}
+
+#section_account h2 {
+  font-size: 2rem;
+  font-family: "Rubik-Bold";
+  margin-bottom: 2rem;
+}
+
+#section_account .card_profile {
+  background-color: white;
+  -webkit-box-shadow: 0 7px 15px #c1c1c1;
+          box-shadow: 0 7px 15px #c1c1c1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section_account .card_profile .header_card {
+  background-color: #231f20;
+  padding: 2.8rem;
+  position: relative;
+  width: 100%;
+}
+
+#section_account .card_profile .header_card .avatar {
+  position: absolute;
+  top: 2.1rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+#section_account .card_profile .header_card .avatar img.img_main {
+  height: 7rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 7px 15px #c1c1c1;
+          box-shadow: 0 7px 15px #c1c1c1;
+}
+
+#section_account .card_profile .header_card .avatar .rating {
+  position: absolute;
+  background-color: #231f20;
+  border-radius: 5px;
+  padding: 1px;
+  top: 6rem;
+  left: 50%;
+  width: 55px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#section_account .card_profile .header_card .avatar .rating img {
+  height: 0.8rem;
+  width: auto;
+  margin-right: 2px;
+}
+
+#section_account .card_profile .header_card .avatar .rating span {
+  color: white;
+  font-family: "Rubik-Bold";
+  font-size: 0.9rem;
+  position: relative;
+  top: 1px;
+}
+
+#section_account .card_profile p.name {
+  text-align: center;
+  margin-top: 5rem;
+  font-family: "Rubik-Bold";
+}
+
+#section_account .card_profile p.city, #section_account .card_profile p.reviews {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+#section_account .card_profile .main_button {
+  margin-top: 1.5rem;
+}
+
+#section_account .card_profile .profile_stars {
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section_account .card_profile .profile_stars img {
+  height: 1.2rem;
+  padding: 3px;
+}
+
+#section_account .card_profile table {
+  margin: 1rem 0;
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+
+#section_account .card_profile table tr:hover {
+  background-color: #f5f5f5;
+}
+
+#section_account .card_profile table td {
+  font-size: 0.8rem;
+  text-align: center;
+  font-family: "Rubik";
+  font-weight: bolder;
+  padding: 5px 19px;
+}
+
+#section_account .card_profile table .green_td {
+  color: #59d389;
+  font-weight: normal;
+}
+
+#section_account .card_profile h6 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#section_account .card_settings {
+  padding-bottom: 2rem;
+}
+
+#section_account .card_settings .main_button {
+  width: 14rem;
+  margin: 5px 0;
+  margin-top: 4.5rem;
+  margin-bottom: 3rem;
+}
+
+#section_account .card_settings .secondary_button {
+  color: #59d389;
+  width: 14rem;
+  margin: 5px 0;
+}
+
+#section_account .card_settings .secondary_button:hover {
+  color: white;
+}
+
+#section_account .card_settings .google_entered, #section_account .card_settings .facebook_entered {
+  border: 1px solid #59d389;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section_account .card_settings .google_entered img, #section_account .card_settings .facebook_entered img {
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: 5px;
+  border: 1px solid #e3e3e5;
+}
+
+#section_account .card_settings .google_entered .right_text, #section_account .card_settings .facebook_entered .right_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#section_account .card_settings .google_entered .right_text h6, #section_account .card_settings .facebook_entered .right_text h6 {
+  font-size: 0.9rem;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-family: "Rubik-Bold";
+}
+
+#section_account .card_settings .google_entered .right_text a, #section_account .card_settings .facebook_entered .right_text a {
+  color: #59d389;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+#section_account .profile1 {
+  padding: 2rem 3rem;
+  -webkit-box-shadow: 0 7px 15px #c1c1c1;
+          box-shadow: 0 7px 15px #c1c1c1;
+}
+
+#section_account .profile1 h6 {
+  font-size: 1.3rem;
+}
+
+#section_account .profile1 a {
+  margin-top: 1rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+#section_account .mycar_caption {
+  margin-top: 4rem;
+  font-size: 1.3rem;
+}
+
+#section_account .profile_mycar .card_auto {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #e3e3e5;
+  background-color: white;
+  margin-top: 1rem;
+  overflow-x: hidden;
+  padding-bottom: 0.6rem;
+}
+
+#section_account .profile_mycar .card_auto .autopic {
+  height: 13.5rem;
+}
+
+#section_account .profile_mycar .card_auto .carname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  margin-top: 0.2rem;
+}
+
+#section_account .profile_mycar .card_auto .carname h6 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#section_account .profile_mycar .card_auto .carname span {
+  font-family: "Rubik";
+}
+
+#section_account .profile_mycar .card_auto .carstars {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0 20px;
+  margin-top: 0;
+}
+
+#section_account .profile_mycar .card_auto .carstars img {
+  height: 0.8rem;
+  margin: 0 1px;
+}
+
+#section_account .profile_mycar .card_auto .footer_card {
+  color: grey;
+  padding: 0 20px;
+  font-size: 0.9rem;
+}
+
+#section_account .all_auto {
+  margin: 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 13rem;
+}
+
+#section_account .review_auto, #section_account .review_trips {
+  padding: 2rem 3rem;
+  -webkit-box-shadow: 0 7px 15px #c1c1c1;
+          box-shadow: 0 7px 15px #c1c1c1;
+  margin-bottom: 2rem;
+}
+
+#section_account .review_auto .header_review, #section_account .review_trips .header_review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section_account .review_auto .header_review h6, #section_account .review_trips .header_review h6 {
+  font-size: 1.3rem;
+}
+
+#section_account .review_auto .header_review .carstars, #section_account .review_trips .header_review .carstars {
+  padding: 0 20px;
+  margin-top: 0;
+  position: relative;
+  top: -1px;
+}
+
+#section_account .review_auto .header_review .carstars img, #section_account .review_trips .header_review .carstars img {
+  height: 0.8rem;
+  margin: 0 1px;
+}
+
+#section_account .review_auto .header_review .footer_card, #section_account .review_trips .header_review .footer_card {
+  color: grey;
+  padding: 0 20px;
+  font-size: 0.9rem;
+}
+
+#section_account .review_auto .content_review, #section_account .review_trips .content_review {
+  margin: 0.5rem 0;
+}
+
+#section_account .review_auto .content_review .review_img, #section_account .review_trips .content_review .review_img {
+  max-width: 100%;
+  width: 5rem;
+  border: 1px solid #d3d3d3;
+  border-radius: 50%;
+  margin-top: 12px;
+}
+
+#section_account .review_auto .content_review .someReview, #section_account .review_trips .content_review .someReview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#section_account .review_auto .content_review .someReview p, #section_account .review_trips .content_review .someReview p {
+  line-height: 30px;
+  font-size: 0.9rem;
+}
+
+#section_account .review_auto .content_review .someReview .footer_review, #section_account .review_trips .content_review .someReview .footer_review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section_account .review_auto .content_review .someReview .footer_review .name, #section_account .review_trips .content_review .someReview .footer_review .name {
+  font-weight: bolder;
+  font-family: "Rubik-Bold";
+  font-size: 0.9rem;
+}
+
+#section_account .review_auto .content_review .someReview .footer_review .carstars, #section_account .review_trips .content_review .someReview .footer_review .carstars {
+  margin: 0 2rem;
+  position: relative;
+  top: -3px;
+}
+
+#section_account .review_auto .content_review .someReview .footer_review .footer_card, #section_account .review_trips .content_review .someReview .footer_review .footer_card {
+  color: grey;
+  padding: 0 20px;
+  font-size: 0.9rem;
+}
+
+#section_account .review_empty .content_review_empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section_account .review_empty .content_review_empty img {
+  height: 5rem;
+}
+
+#section_account .review_empty .content_review_empty .empty_stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section_account .review_empty .content_review_empty .empty_stars p {
+  font-family: "Rubik-Bold";
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
+
+#section_account .review_empty .content_review_empty .empty_stars .carstars {
+  padding: 0 20px;
+  margin-top: 0;
+  position: relative;
+  top: -1px;
+}
+
+#section_account .review_empty .content_review_empty .empty_stars .carstars img {
+  height: 0.8rem;
+  margin: 0 1px;
+}
+
+#section_account .settings1 {
+  background-color: white;
+  padding: 1rem 2.5rem;
+  padding-bottom: 3rem;
+  -webkit-box-shadow: 0 7px 15px #c1c1c1;
+          box-shadow: 0 7px 15px #c1c1c1;
+}
+
+#section_account .settings1 h6 {
+  font-size: 0.9rem;
+  font-family: "Rubik-Bold";
+  margin-top: 2rem;
+}
+
+#section_account .settings1 h6 span {
+  font-family: "Rubik";
+  font-size: 0.8rem;
+  margin-left: 1rem;
+}
+
+#section_account .settings1 .s1_inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section_account .settings1 .s1_inputs input {
+  width: 100%;
+  margin-right: 10px;
+  margin-bottom: 1rem;
+  padding: 5px 10px;
+  border: 1px solid #c9c9c9;
+}
+
+#section_account .settings1 .s1_inputs input:focus {
+  outline: none;
+}
+
+#section_account .settings1 .inp_datas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+#section_account .settings1 .inp_datas .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin-right: 10px;
+}
+
+#section_account .settings1 .inp_datas .group .datas_img {
+  position: absolute;
+  left: 14px;
+  top: 37px;
+  height: 1.1rem;
+}
+
+#section_account .settings1 .inp_datas .group label {
+  font-size: 0.9rem;
+  font-family: "Rubik-Bold";
+}
+
+#section_account .settings1 .inp_datas .group input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 5px 10px;
+  border: 1px solid #c9c9c9;
+  padding-left: 44px;
+}
+
+#section_account .settings1 .inp_datas .group input:focus {
+  outline: none;
+}
+
+#section_account .settings1 .doc_photo .edit_delete_docs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section_account .settings1 .doc_photo .edit_delete_docs .img_first {
+  position: relative;
+}
+
+#section_account .settings1 .doc_photo .edit_delete_docs .img_first .first_doc {
+  height: 5rem;
+  margin-right: 15px;
+}
+
+#section_account .settings1 .doc_photo .edit_delete_docs .img_first .edits_icons {
+  position: absolute;
+  right: -6px;
+  top: -2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section_account .settings1 .doc_photo .edit_delete_docs .img_first .edits_icons img {
+  height: 12px;
+  margin: 3px;
+}
+
+#section_account .settings1 .doc_photo .edit_delete_docs .img_second {
+  margin-left: 20px;
+}
+
+#section_account .settings1 .doc_photo .edit_delete_docs .img_second img {
+  height: 5rem;
+}
+
+#section_account .settings1 .verify h6 {
+  font-size: 0.9rem;
+  font-family: "Rubik-Bold";
+}
+
+#section_account .settings1 .verify .verify_phone, #section_account .settings1 .verify .verify_email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+#section_account .settings1 .verify .verify_phone label, #section_account .settings1 .verify .verify_email label {
+  width: 5rem;
+  position: relative;
+  top: 2px;
+  font-size: 0.9rem;
+}
+
+#section_account .settings1 .verify .verify_phone input, #section_account .settings1 .verify .verify_email input {
+  width: 10rem;
+  padding: 5px 10px;
+  border: 1px solid #c9c9c9;
+}
+
+#section_account .settings1 .verify .verify_phone input:focus, #section_account .settings1 .verify .verify_email input:focus {
+  outline: none;
+}
+
+#section_account .settings1 .verify .verify_phone .v_status, #section_account .settings1 .verify .verify_email .v_status {
+  margin: 0 10px;
+  margin-right: 20px;
+}
+
+#section_account .settings1 .verify .verify_phone .v_status .green_p, #section_account .settings1 .verify .verify_email .v_status .green_p {
+  font-size: 0.8rem;
+  color: #59d389;
+}
+
+#section_account .settings1 .verify .verify_phone .v_status .green_p img, #section_account .settings1 .verify .verify_email .v_status .green_p img {
+  position: relative;
+  top: -1px;
+  margin-right: 5px;
+}
+
+#section_account .settings1 .verify .verify_phone .main_button, #section_account .settings1 .verify .verify_email .main_button {
+  font-size: 0.8rem;
+}
+
+#section_addcar {
+  margin-bottom: 6rem;
+}
+
+#section_addcar form #app-old {
+  padding: 1rem 2.5rem;
+  padding-bottom: 3rem;
+  -webkit-box-shadow: 0 7px 15px #c1c1c1;
+          box-shadow: 0 7px 15px #c1c1c1;
+  margin: 2rem 0;
+}
+
+#section_addcar form #app-old h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+#section_addcar form #app-old .no-image-upload {
+  background: url(/img/empty_photo.png);
+}
+
+#section_addcar form #app-old .row {
+  margin: 0;
+}
+
+#section_addcar form #app-old .row h6 {
+  font-size: 0.9rem;
+}
+
+#section_addcar form #app-old .row .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#section_addcar form #app-old .row .form-group label {
+  font-size: 0.9rem;
+  font-family: "Rubik-Bold";
+}
+
+#section_addcar form #app-old .row .group_carselect {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: -7px;
+}
+
+#section_addcar form #app-old .row .selects .select-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#section_addcar form #app-old .row .selects h6 {
+  margin: 0;
+  margin-bottom: .6rem;
+}
+
+#section_addcar form #app-old .parametr_row .form-group {
+  max-width: 100%;
+  width: 16rem;
+  position: relative;
+}
+
+#section_addcar form #app-old .parametr_row .form-group input {
+  font-weight: bolder;
+}
+
+#section_addcar form #app-old .parametr_row .form-group span {
+  position: absolute;
+  right: 35px;
+  top: 38px;
+  font-size: 0.8rem;
+  opacity: .5;
+}
+
+#section_addcar form #app-old .specif {
+  margin-top: 1.5rem;
+}
+
+#section_addcar form #app-old .specif .custom-checkbox {
+  margin-left: 0;
+  margin-right: 30px;
+}
+
+#section_addcar form #app-old .mainChecks {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#section_addcar form #app-old .mainChecks .custom-control {
+  margin-left: 0;
+}
+
+#section_addcar form #app-old .photo_auto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#section_addcar form #app-old .photo_auto .edit_delete_docs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+#section_addcar form #app-old .photo_auto .edit_delete_docs input {
+  height: 100%;
+}
+
+#section_addcar form #app-old .photo_auto .edit_delete_docs .img_first, #section_addcar form #app-old .photo_auto .edit_delete_docs .img_second {
+  margin-right: 25px;
+  margin-top: 20px;
+}
+
+#section_addcar form #app-old .photodoc {
+  margin-top: 2rem;
+}
+
+#section_addcar form #app-old .photodoc .main_p {
+  font-size: 0.9rem;
+}
+
+#section_addcar form #app-old .photodoc .edit_delete_docs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section_addcar form #app-old .photodoc .edit_delete_docs input {
+  height: 100%;
+}
+
+#section_addcar form #app-old .photodoc .img_first, #section_addcar form #app-old .photodoc .img_second {
+  margin-right: 25px;
+  margin-top: 20px;
+}
+
+#section_addcar form #app-old select {
+  margin-right: 20px;
+  padding: 5px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 0;
+  height: 2.25rem;
+  width: 12rem;
+  padding-bottom: 6px;
+}
+
+#section_addcar form #app-old select:focus {
+  outline: 1px solid #59d389;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #59d389;
+}
+
+#section_addcar form #app-old input {
+  margin-right: 20px;
+  margin-bottom: 1rem;
+  padding: 5px 15px;
+  height: 2.25rem;
+  border: 1px solid #ced4da;
+  padding-bottom: 6px;
+}
+
+#section_addcar form #app-old input:focus {
+  outline: 1px solid #59d389;
+  border: 1px solid #59d389;
+}
+
+#section_addcar form #app-old #autodescription {
+  resize: none;
+  max-width: 100%;
+  width: 49rem;
+  border: 1px solid #ced4da;
+  padding: 5px 15px;
+  height: 10rem;
+}
+
+#section_addcar form #app-old #autodescription:focus {
+  outline: 1px solid #59d389;
+  border: 1px solid #59d389;
+}
+
+#section_addcar form #app-old .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #59d389;
+}
+
+#section_addcar form #app-old .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #59d389;
+}
+
+#section_addcar form #app-old .custom-radio, #section_addcar form #app-old .custom-checkbox {
+  margin-left: 30px;
+  position: relative;
+  top: -2px;
+}
+
+#section_addcar form #app-old .custom-radio input, #section_addcar form #app-old .custom-checkbox input {
+  height: auto;
+}
+
+#section_addcar form #app-old .custom-radio input:focus, #section_addcar form #app-old .custom-checkbox input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#section_addcar form #app-old .custom-radio input:active, #section_addcar form #app-old .custom-checkbox input:active {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#section_addcar form #app-old #inp_year {
+  width: 6rem;
+}
+
+#section_addcar form #app-old #inp_mileage {
+  width: 15rem;
+}
+
+#section_addcar form #app-old #inp_vin, #section_addcar form #app-old #inp_num {
+  width: 12rem;
+}
+
+#section_addcar form #app-old #inp_fuel {
+  width: 9rem;
+}
+
+#section_addcar form #app-old #inp_fuel {
+  width: 12rem;
+}
+
+#section_addcar form #app-old #inp_cons {
+  width: 9rem;
+}
+
+#section_myauto, #section_myauto_empty {
+  padding: 3rem 0;
+  padding-bottom: 4rem;
+}
+
+#section_myauto .upper_block, #section_myauto_empty .upper_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section_myauto .upper_block .secondary_button, #section_myauto_empty .upper_block .secondary_button {
+  font-family: "Rubik-Bold";
+  color: #59d389;
+}
+
+#section_myauto .upper_block .secondary_button:hover, #section_myauto_empty .upper_block .secondary_button:hover {
+  color: white;
+}
+
+#section_myauto .upper_block h2, #section_myauto_empty .upper_block h2 {
+  font-size: 2rem;
+}
+
+#section_myauto .upper_block a, #section_myauto_empty .upper_block a {
+  font-size: 0.8rem;
+}
+
+#section_myauto .card_auto, #section_myauto_empty .card_auto {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #e3e3e5;
+  background-color: white;
+  margin-top: 1rem;
+  position: relative;
+  overflow-x: hidden;
+  padding-bottom: 0.6rem;
+}
+
+#section_myauto .card_auto .statuscar, #section_myauto_empty .card_auto .statuscar {
+  position: absolute;
+  padding: 0 1rem;
+  left: 1rem;
+  top: 10.5rem;
+  background-color: #111;
+  opacity: .7;
+}
+
+#section_myauto .card_auto .statuscar p, #section_myauto_empty .card_auto .statuscar p {
+  color: white;
+  font-size: 0.8rem;
+  font-family: "Rubik";
+}
+
+#section_myauto .card_auto .autopic, #section_myauto_empty .card_auto .autopic {
+  height: 13.5rem;
+}
+
+#section_myauto .card_auto .carname, #section_myauto_empty .card_auto .carname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  margin-top: 0.2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#section_myauto .card_auto .carname h6, #section_myauto_empty .card_auto .carname h6 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#section_myauto .card_auto .carname span, #section_myauto_empty .card_auto .carname span {
+  font-family: "Rubik";
+}
+
+#section_myauto .card_auto .carstars, #section_myauto_empty .card_auto .carstars {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0 20px;
+  margin-top: 0;
+}
+
+#section_myauto .card_auto .carstars img, #section_myauto_empty .card_auto .carstars img {
+  height: 0.8rem;
+  margin: 0 1px;
+}
+
+#section_myauto .card_auto .footer_card, #section_myauto_empty .card_auto .footer_card {
+  color: grey;
+  padding: 0 20px;
+  font-size: 0.9rem;
+}
+
+#section_myauto_empty {
+  min-height: 89vh;
+}
+
+#section_myauto_empty .row_empty_car {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35rem;
+}
+
+#section_myauto_empty .row_empty_car h2 {
+  text-align: center;
+}
+
+#section_myauto_empty .row_empty_car a {
+  margin-top: 3rem;
+  z-index: 323;
+  position: relative;
+}
+
+#section_myauto_empty .row_empty_car img {
+  width: 20rem;
+  position: absolute;
+  top: 138px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #59d389 !important;
+}
+
+#section_catalog .row-buttons {
+  position: relative;
+  margin: 1rem 0;
+}
+
+#section_catalog .row-buttons .catalog_button {
+  padding: 0.7rem 1.8rem;
+  cursor: pointer;
+  border-radius: 3px !important;
+  text-align: center;
+  border: 1px solid #231f20;
+  font-size: 0.9rem;
+  font-family: "Rubik-Bold";
+  color: #231f20;
+  letter-spacing: .01em;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: transparent;
+  margin: 0 10px;
+}
+
+#section_catalog .row-buttons .catalog_button:hover {
+  color: #fff;
+  background-color: #35b668;
+  border: 1px solid #35b668;
+}
+
+#section_catalog .row-buttons .catalog_button:focus {
+  outline: none;
+}
+
+#section_catalog .row-buttons .catalog_button.pressed {
+  background-color: #35b668;
+  border: 1px solid #35b668;
+  color: #fff;
+}
+
+#section_catalog .row-buttons .catalog_button.pressed:hover {
+  color: #fff;
+  background-color: #35b668;
+  border: 1px solid #35b668;
+}
+
+#section_catalog .row-buttons .catalog_button.pressed:focus {
+  outline: none;
+}
+
+#section_catalog .row-buttons .add-filt {
+  position: relative;
+}
+
+#section_catalog .row-buttons .add-filt::after {
+  visibility: hidden;
+  border: 23px solid transparent;
+  border-bottom: 23px solid #dff6e5;
+  content: '';
+  position: absolute;
+  left: 17px;
+  top: 2rem;
+  z-index: -1;
+}
+
+#section_catalog .row-buttons .hiddenblock {
+  position: absolute;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #35b668;
+  z-index: 10;
+  display: none;
+  max-width: 100%;
+  min-width: 18rem;
+}
+
+#section_catalog .row-buttons .hiddenblock h6 {
+  margin-bottom: 2rem;
+}
+
+#section_catalog .row-buttons .hiddenblock h6 span {
+  opacity: .5;
+}
+
+#section_catalog .row-buttons .hiddenblock .content-hb {
+  position: relative;
+  padding: 0.5rem 2rem;
+  background-color: white;
+  max-height: 40rem;
+}
+
+#section_catalog .row-buttons .hiddenblock .content-hb::after {
+  border: 23px solid transparent;
+  border-bottom: 23px solid #dff6e5;
+  content: '';
+  position: absolute;
+  left: 17px;
+  top: -2rem;
+  z-index: -1;
+}
+
+#section_catalog .row-buttons .hiddenblock .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #59d389;
+}
+
+#section_catalog .row-buttons .hiddenblock .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #59d389;
+}
+
+#section_catalog .row-buttons .hiddenblock .custom-radio, #section_catalog .row-buttons .hiddenblock .custom-checkbox {
+  position: relative;
+  top: -2px;
+}
+
+#section_catalog .row-buttons .hiddenblock .custom-radio input, #section_catalog .row-buttons .hiddenblock .custom-checkbox input {
+  height: auto;
+}
+
+#section_catalog .row-buttons .hiddenblock .custom-radio input:focus, #section_catalog .row-buttons .hiddenblock .custom-checkbox input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#section_catalog .row-buttons .hiddenblock .custom-radio input:active, #section_catalog .row-buttons .hiddenblock .custom-checkbox input:active {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#section_catalog .row-buttons .hiddenblock .custom-control {
+  margin: 0.8rem 0;
+}
+
+#section_catalog .row-buttons .hiddenblock-1 {
+  top: 4rem;
+  left: 10px;
+}
+
+#section_catalog .row-buttons .hiddenblock-2 {
+  top: 4rem;
+  left: 11.9rem;
+  width: 24rem;
+  max-width: 100%;
+}
+
+#section_catalog .row-buttons .hiddenblock-2 .rangeSlider {
+  position: relative;
+  height: 6px;
+  margin: 20px;
+  margin-top: 45px;
+  margin-bottom: 55px;
+  border-radius: 500px;
+  background-color: #e6e6e6;
+}
+
+#section_catalog .row-buttons .hiddenblock-2 .rangeSlider--animate .rangeSlider__handle, #section_catalog .row-buttons .hiddenblock-2 .rangeSlider--animate .rangeSlider__tooltip {
+  -webkit-transition: left 300ms;
+  transition: left 300ms;
+}
+
+#section_catalog .row-buttons .hiddenblock-2 .rangeSlider--animate .rangeSlider__range {
+  -webkit-transition: left 300ms, width 300ms;
+  transition: left 300ms, width 300ms;
+}
+
+#section_catalog .row-buttons .hiddenblock-2 .rangeSlider__handle {
+  display: inline-block;
+  position: absolute;
+  top: -12px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: #35b668;
+  -webkit-box-shadow: 0 2px 10px #ccc;
+          box-shadow: 0 2px 10px #ccc;
+}
+
+#section_catalog .row-buttons .hiddenblock-2 .rangeSlider__handle:after {
+  content: attr(data-value);
+  display: block;
+  position: absolute;
+  top: 39px;
+  left: -25px;
+  width: 80px;
+  height: 25px;
+  line-height: 25px;
+  color: #111;
+  font-size: 16px;
+  font-weight: bolder;
+  font-family: "Rubik-Bold";
+  text-align: center;
+  -webkit-transition: margin 300ms;
+  transition: margin 300ms;
+}
+
+#section_catalog .row-buttons .hiddenblock-2 .rangeSlider__handle:focus {
+  outline: 0;
+}
+
+#section_catalog .row-buttons .hiddenblock-2 .rangeSlider__handle--from {
+  left: -15px;
+}
+
+#section_catalog .row-buttons .hiddenblock-2 .rangeSlider__handle--to {
+  right: -15px;
+}
+
+#section_catalog .row-buttons .hiddenblock-2 .rangeSlider__handle--active {
+  z-index: 1;
+}
+
+#section_catalog .row-buttons .hiddenblock-2 .rangeSlider__range {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #35b668;
+  border-radius: 500px;
+}
+
+#section_catalog .row-buttons .hiddenblock-4 {
+  top: 4rem;
+  left: 19rem;
+  max-width: 100%;
+}
+
+#section_catalog .row-buttons .hiddenblock-5 {
+  top: 4rem;
+  left: 35.5rem;
+  max-width: 100%;
+  width: 30rem;
+  max-width: 100%;
+  overflow-y: scroll;
+}
+
+#section_catalog .row-buttons .hiddenblock-5 .group_caption {
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+
+#section_catalog .card-cars {
+  width: 50%;
+  height: 90vh;
+  overflow-y: auto;
+  padding: 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#section_catalog .card-cars .card_auto {
+  width: 47%;
+  border-radius: 4px;
+  border: 1px solid #e3e3e5;
+  background-color: white;
+  margin-top: 1.5rem;
+  position: relative;
+  overflow-x: hidden;
+  padding-bottom: 0.6rem;
+  margin: 1rem 0.5rem;
+  height: auto;
+  max-height: 25rem;
+}
+
+#section_catalog .card-cars .card_auto .statuscar {
+  position: absolute;
+  padding: 0 1rem;
+  left: 1rem;
+  top: 10.5rem;
+  background-color: #111;
+  opacity: .7;
+}
+
+#section_catalog .card-cars .card_auto .statuscar p {
+  color: white;
+  font-size: 0.8rem;
+  font-family: "Rubik";
+}
+
+#section_catalog .card-cars .card_auto .autopic {
+  width: 100%;
+  height: 13.5rem;
+}
+
+#section_catalog .card-cars .card_auto .carname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  margin-top: 0.2rem;
+}
+
+#section_catalog .card-cars .card_auto .carname h6 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#section_catalog .card-cars .card_auto .carname span {
+  font-family: "Rubik";
+}
+
+#section_catalog .card-cars .card_auto .carstars {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0 20px;
+  margin-top: 0;
+}
+
+#section_catalog .card-cars .card_auto .carstars img {
+  height: 0.8rem;
+  margin: 0 1px;
+}
+
+#section_catalog .card-cars .card_auto .footer_card {
+  color: grey;
+  padding: 0 20px;
+  font-size: 0.9rem;
+}
+
+#section_catalog .card-map {
+  width: 50%;
+  max-height: 100vh;
+}
+
+#section_catalog #map .gm-style .gm-style-iw-d {
+  overflow: auto !important;
+  margin-bottom: 5px;
+}
+
+#section_catalog #map .gm-style .gm-style-iw-d + button {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+#section_catalog #map .gm-style .gm-style-iw-c {
+  border-radius: 5px;
+  top: 16px;
+  padding: 0;
+}
+
+#section_catalog #map .gm-style .gm-style-iw-c .autopic {
+  width: 14rem;
+}
+
+#section_catalog #map .gm-style .gm-style-iw-c .carname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  margin-top: 1rem;
+  max-width: 14rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+#section_catalog #map .gm-style .gm-style-iw-c .carname h6 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 900;
+  font-size: 0.8rem;
+  margin: 0 5px;
+  margin-left: 0;
+  text-transform: uppercase;
+}
+
+#section_catalog #map .gm-style .gm-style-iw-c .carname span {
+  font-family: "Rubik";
+}
+
+#section_catalog #map .gm-style .gm-style-iw-c .carstars {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0 20px;
+  margin-top: 0;
+}
+
+#section_catalog #map .gm-style .gm-style-iw-c .carstars img {
+  height: 0.8rem;
+  margin: 0 1px;
+}
+
+#section_catalog #map .gm-style .gm-style-iw-c .footer_card {
+  color: grey;
+  padding: 0 20px;
+  font-size: 0.9rem;
+}
+
+#section_catalog #map .gm-style .gm-style-iw-t::after {
+  display: none;
+}
+
+section.section_someauto {
+  background-color: #171415;
+}
+
+section.section_someauto .inner_dark {
+  position: relative;
+}
+
+section.section_someauto .inner_dark .owl-carousel {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+section.section_someauto .inner_dark .owl-carousel .owl-dots {
+  margin-top: 2rem;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.section_someauto .inner_dark .owl-carousel .owl-dots .active {
+  background-color: green;
+}
+
+section.section_someauto .inner_dark .owl-carousel .owl-dot {
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  margin: 0 3px;
+  background-color: black;
+  border-radius: 50% 50%;
+}
+
+section.section_someauto .inner_dark .owl-carousel .owl-nav {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+section.section_someauto .inner_dark .owl-carousel .owl-nav button.owl-prev {
+  height: 30px;
+  width: 30px;
+  background: url(../img/page_auto/left_arrow.png) no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 3rem;
+  top: -3rem;
+}
+
+section.section_someauto .inner_dark .owl-carousel .owl-nav button.owl-next {
+  height: 30px;
+  width: 30px;
+  background: url(../img/page_auto/right_arrow.png) no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  right: 3rem;
+  top: -3rem;
+}
+
+section.section_someauto .inner_dark .owl-carousel .owl-nav button.owl-next:focus, section.section_someauto .inner_dark .owl-carousel .owl-carousel .owl-nav button.owl-prev:focus {
+  border: none;
+  outline: none;
+  outline-color: red;
+}
+
+section.section_someauto .inner_dark .owl-carousel img.owlpic {
+  max-width: 100%;
+  max-height: 65vh;
+  min-height: auto;
+}
+
+section.section_someauto .inner_dark .dark_board {
+  position: absolute;
+  left: 2rem;
+  bottom: 1rem;
+  background-color: #00000069;
+  width: 62%;
+  padding: 0.2rem 1.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+
+section.section_someauto .inner_dark .dark_board h6 {
+  color: white;
+}
+
+section.section_someauto .inner_dark .dark_board a {
+  color: #929090;
+  text-decoration: underline;
+  font-family: "Rubik";
+  font-size: 0.8rem;
+  margin: 0 1.5rem;
+}
+
+section.section_someauto .inner_dark .dark_board .publicate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.section_someauto .inner_dark .dark_board .publicate img {
+  width: 14px;
+  margin-right: 5px;
+}
+
+section.section_someauto .inner_dark .dark_board .publicate p {
+  color: #59d389;
+  font-family: "Rubik-Bold";
+  font-size: 0.9rem;
+}
+
+section.section_someauto .inner_dark .green_price {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #59d389;
+  width: auto;
+  z-index: 10;
+  padding: 2rem 0rem;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+section.section_someauto .inner_dark .green_price h5 {
+  color: white;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  min-width: 22.3rem;
+  font-size: 1.8rem;
+}
+
+section.section_someauto .inner_dark .green_price .main_button {
+  display: none;
+}
+
+.section_someauto2 .inner_left {
+  padding-right: 2rem;
+  width: calc(100% - 22.3rem);
+}
+
+.section_someauto2 .inner_left .main_infoCar {
+  margin-top: 3rem;
+}
+
+.section_someauto2 .inner_left .main_infoCar h3 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.section_someauto2 .inner_left .main_infoCar .carname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  margin-top: 1rem;
+  max-width: 14rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.section_someauto2 .inner_left .main_infoCar .carname h6 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 900;
+  font-size: 0.8rem;
+  margin: 0 5px;
+  margin-left: 0;
+  text-transform: uppercase;
+}
+
+.section_someauto2 .inner_left .main_infoCar .carname span {
+  font-family: "Rubik";
+}
+
+.section_someauto2 .inner_left .main_infoCar .carstars {
+  margin: 0;
+}
+
+.section_someauto2 .inner_left .main_infoCar .carstars img {
+  height: 0.8rem;
+  margin: 0 1px;
+}
+
+.section_someauto2 .inner_left .main_infoCar .footer_card {
+  color: grey;
+  padding: 0 20px;
+  font-size: 0.9rem;
+  position: relative;
+  top: 1px;
+  padding-left: 30px;
+}
+
+.section_someauto2 .inner_left .mainprofile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section_someauto2 .inner_left .mainprofile .avatar {
+  position: relative;
+  top: 2.1rem;
+}
+
+.section_someauto2 .inner_left .mainprofile .avatar img.img_main {
+  height: 5rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 7px 15px #c1c1c1;
+          box-shadow: 0 7px 15px #c1c1c1;
+}
+
+.section_someauto2 .inner_left .mainprofile .avatar .rating {
+  position: absolute;
+  background-color: #231f20;
+  border-radius: 5px;
+  padding: 1px;
+  top: 4.6rem;
+  left: 50%;
+  width: 55px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section_someauto2 .inner_left .mainprofile .avatar .rating img {
+  height: 0.8rem;
+  width: auto;
+  margin-right: 2px;
+}
+
+.section_someauto2 .inner_left .mainprofile .avatar .rating span {
+  color: white;
+  font-family: "Rubik-Bold";
+  font-size: 0.9rem;
+  position: relative;
+  top: 1px;
+}
+
+.section_someauto2 .inner_left .mainprofile .nameUser {
+  position: relative;
+  top: 2.1rem;
+  margin-left: 1rem;
+}
+
+.section_someauto2 .inner_left .mainprofile .nameUser p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.section_someauto2 .inner_left .mainprofile .nameUser p span {
+  font-family: "Rubik-Bold";
+}
+
+.section_someauto2 .inner_left .mainprofile .nameUser .revo {
+  font-size: 0.8rem;
+  opacity: .7;
+  margin-top: 0;
+}
+
+.section_someauto2 .inner_left .item-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3rem;
+  margin-top: 4rem;
+  margin-left: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section_someauto2 .inner_left .item-row p {
+  font-family: "Rubik-Bold";
+  margin: 0;
+}
+
+.section_someauto2 .inner_left .item-row img {
+  margin-right: 10px;
+}
+
+.section_someauto2 .inner_left .row-description {
+  margin: 1rem 0;
+  margin-bottom: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section_someauto2 .inner_left .row-features {
+  margin: 1rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.section_someauto2 .inner_left .row-features .featureSom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.3rem 0;
+}
+
+.section_someauto2 .inner_left .row-features .featureSom p {
+  margin: 0;
+}
+
+.section_someauto2 .inner_left .row-features .featureSom img {
+  margin-right: 10px;
+}
+
+.section_someauto2 .inner_left .review_som {
+  padding: 2rem 15px;
+}
+
+.section_someauto2 .inner_left .review_som .main_button {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.section_someauto2 .inner_left .review_som .header_review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section_someauto2 .inner_left .review_som .header_review h6 {
+  font-size: 1.3rem;
+}
+
+.section_someauto2 .inner_left .review_som .header_review .carstars {
+  padding: 0 20px;
+  margin-top: 0;
+  position: relative;
+  top: -1px;
+}
+
+.section_someauto2 .inner_left .review_som .header_review .carstars img {
+  height: 0.8rem;
+  margin: 0 1px;
+}
+
+.section_someauto2 .inner_left .review_som .header_review .footer_card {
+  color: grey;
+  padding: 0 20px;
+  font-size: 0.9rem;
+}
+
+.section_someauto2 .inner_left .review_som .content_review {
+  margin: 0.5rem 0;
+}
+
+.section_someauto2 .inner_left .review_som .content_review .review_img {
+  max-width: 100%;
+  width: 5rem;
+  border: 1px solid #d3d3d3;
+  border-radius: 50%;
+  margin-top: 12px;
+}
+
+.section_someauto2 .inner_left .review_som .content_review .someReview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section_someauto2 .inner_left .review_som .content_review .someReview p {
+  line-height: 30px;
+  font-size: 0.9rem;
+}
+
+.section_someauto2 .inner_left .review_som .content_review .someReview .footer_review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section_someauto2 .inner_left .review_som .content_review .someReview .footer_review .name {
+  font-weight: bolder;
+  font-family: "Rubik-Bold";
+  font-size: 0.9rem;
+}
+
+.section_someauto2 .inner_left .review_som .content_review .someReview .footer_review .carstars {
+  margin: 0 2rem;
+  position: relative;
+  top: -3px;
+}
+
+.section_someauto2 .inner_left .review_som .content_review .someReview .footer_review .footer_card {
+  color: grey;
+  padding: 0 20px;
+  font-size: 0.9rem;
+}
+
+.section_someauto2 .inner_left .col-map {
+  margin: 1.5rem 0;
+  margin-bottom: 3rem;
+}
+
+.section_someauto2 .inner_right {
+  padding: 2rem 2.5rem;
+  -webkit-box-shadow: 0 7px 15px #c1c1c1;
+          box-shadow: 0 7px 15px #c1c1c1;
+  width: 22.3rem;
+  max-width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.section_someauto2 .inner_right .group-inp-auto {
+  position: relative;
+}
+
+.section_someauto2 .inner_right .group-inp-auto .c_dark {
+  position: absolute;
+  left: 17px;
+  top: 6px;
+}
+
+.section_someauto2 .inner_right .group-inp-auto .arrow {
+  position: absolute;
+  width: 9px;
+  height: 4px;
+  right: 18px;
+  top: 14px;
+  -webkit-filter: brightness(0.4);
+          filter: brightness(0.4);
+}
+
+.section_someauto2 .inner_right .group-inp-auto input {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  width: 100%;
+  line-height: 28px;
+  margin: 10px 0;
+  display: block;
+  padding-left: 43px;
+  padding-right: 33px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Rubik";
+  height: 2rem;
+}
+
+.section_someauto2 .inner_right .group-inp-auto input:focus {
+  outline: none;
+}
+
+.section_someauto2 .inner_right .sidebar_search {
+  background-color: white;
+  position: relative;
+}
+
+.section_someauto2 .inner_right .sidebar_search .city_png {
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+  position: absolute;
+  z-index: 10;
+  left: 16px;
+  top: 10px;
+}
+
+.section_someauto2 .inner_right .sidebar_search .select2-container {
+  width: 100% !important;
+  height: 2.5rem;
+  border: 1px solid #ced4da;
+}
+
+.section_someauto2 .inner_right .sidebar_search .select2-container:focus {
+  outline: none;
+}
+
+.section_someauto2 .inner_right .sidebar_search .select2-selection__rendered {
+  color: #231f20;
+  height: 2.5rem;
+  padding: 4px 40px;
+}
+
+.section_someauto2 .inner_right .sidebar_search .select2-selection--single {
+  background-color: white;
+  border: none;
+}
+
+.section_someauto2 .inner_right .sidebar_search .select2-selection--single:focus {
+  outline: none;
+}
+
+.section_someauto2 .inner_right .sidebar_search .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  background: url(/img/profile_arrow.png) no-repeat;
+  background-position: center;
+  border: none;
+  height: 1rem;
+  width: 1rem;
+  right: 0;
+  margin-left: -17px;
+  top: 13px;
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+}
+
+.section_someauto2 .inner_right .minBook {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.section_someauto2 .inner_right .toBookBtn {
+  width: 100%;
+}
+
+.section_someauto2 .inner_right .toBookBtn .toBook {
+  padding: 1rem 2rem;
+  display: inherit;
+}
+
+.section_someauto2 .inner_right .toBookBtn.blocked a {
+  background-color: #e1e3e6;
+  cursor: auto;
+  color: white;
+}
+
+.section_someauto2 .inner_right .bookStatus {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  font-family: "Rubik-Bold";
+}
+
+.section_someauto2 .inner_right .freeCancel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem 0;
+}
+
+.section_someauto2 .inner_right .freeCancel img {
+  width: 2.4rem;
+}
+
+.section_someauto2 .inner_right .freeCancel .freeblack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 1rem;
+}
+
+.section_someauto2 .inner_right .freeCancel .freeblack h6 {
+  color: #59d389;
+  margin: 0;
+}
+
+.section_someauto2 .inner_right .freeCancel .freeblack p {
+  font-size: 0.9rem;
+  opacity: .5;
+}
+
+.section_someauto2 .inner_right .cancelRed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 2rem 0;
+  border: 2px solid #f63131;
+  border-radius: 2px;
+  padding: 1rem;
+}
+
+.section_someauto2 .inner_right .cancelRed img {
+  width: 2rem;
+}
+
+.section_someauto2 .inner_right .cancelRed .cancelblack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 1rem;
+}
+
+.section_someauto2 .inner_right .cancelRed .cancelblack h6 {
+  color: #f63131;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.section_someauto2 .inner_right .cancelRed .cancelblack p {
+  font-size: 0.8rem;
+  margin: 0;
+  color: #f63131;
+}
+
+.section_someauto2 .inner_right .redDatas {
+  display: none;
+}
+
+.section_someauto2 .inner_right .limitKm {
+  margin: 2rem 0;
+}
+
+.section_someauto2 .inner_right .limitKm h6 {
+  margin-bottom: 0;
+}
+
+.section_someauto2 .inner_right .limitKm h6 span {
+  margin: 0 2rem;
+}
+
+.section_someauto2 .inner_right .limitKm p {
+  font-size: 0.8rem;
+}
+
+.section_someauto2 .inner_right .permissions, .section_someauto2 .inner_right .bans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.section_someauto2 .inner_right .permissions .perm, .section_someauto2 .inner_right .permissions .bans_red, .section_someauto2 .inner_right .bans .perm, .section_someauto2 .inner_right .bans .bans_red {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section_someauto2 .inner_right .permissions .perm img, .section_someauto2 .inner_right .permissions .bans_red img, .section_someauto2 .inner_right .bans .perm img, .section_someauto2 .inner_right .bans .bans_red img {
+  height: 0.7rem;
+  margin-right: 7px;
+}
+
+.section_someauto2 .inner_right .permissions .perm p, .section_someauto2 .inner_right .permissions .bans_red p, .section_someauto2 .inner_right .bans .perm p, .section_someauto2 .inner_right .bans .bans_red p {
+  font-size: 0.9rem;
+}
+
+.section_someauto2 .inner_right .bans {
+  margin-bottom: 0;
+}
+
+#section_account.section_reviews {
+  background-color: white;
+  padding: 0;
+  min-height: 80vh;
+}
+
+#section_account.section_reviews h2 {
+  font-family: 'Merriweather', sans-serif;
+}
+
+#section_account.section_reviews .review_auto {
+  padding: 2rem 3rem;
+  -webkit-box-shadow: 0 7px 15px #c1c1c1;
+          box-shadow: 0 7px 15px #c1c1c1;
+  margin-bottom: 2rem;
+}
+
+#section_account.section_reviews .review_auto .main_button {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+#section_account.section_reviews .review_auto .header_review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section_account.section_reviews .review_auto .header_review h6 {
+  font-size: 1.3rem;
+}
+
+#section_account.section_reviews .review_auto .header_review .carstars {
+  padding: 0 20px;
+  margin-top: 0;
+  position: relative;
+  top: -1px;
+}
+
+#section_account.section_reviews .review_auto .header_review .carstars img {
+  height: 0.8rem;
+  margin: 0 1px;
+}
+
+#section_account.section_reviews .review_auto .header_review .footer_card {
+  color: grey;
+  padding: 0 20px;
+  font-size: 0.9rem;
+}
+
+#section_account.section_reviews .review_auto .content_review {
+  margin: 0.5rem 0;
+}
+
+#section_account.section_reviews .review_auto .content_review .review_img {
+  max-width: 100%;
+  width: 5rem;
+  border: 1px solid #d3d3d3;
+  border-radius: 50%;
+  margin-top: 12px;
+}
+
+#section_account.section_reviews .review_auto .content_review .someReview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
+}
+
+#section_account.section_reviews .review_auto .content_review .someReview p {
+  line-height: 30px;
+  font-size: 0.9rem;
+}
+
+#section_account.section_reviews .review_auto .content_review .someReview .footer_review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section_account.section_reviews .review_auto .content_review .someReview .footer_review .name {
+  font-weight: bolder;
+  font-family: "Rubik-Bold";
+  font-size: 0.9rem;
+}
+
+#section_account.section_reviews .review_auto .content_review .someReview .footer_review .carstars {
+  margin: 0 2rem;
+  position: relative;
+  top: -3px;
+}
+
+#section_account.section_reviews .review_auto .content_review .someReview .footer_review .footer_card {
+  color: grey;
+  padding: 0 20px;
+  font-size: 0.9rem;
+}
+
+section#section_booking {
+  margin: 3rem 0;
+  margin-bottom: 5rem;
+}
+
+section#section_booking .booking_block {
+  padding: 2rem 2.5rem;
+  -webkit-box-shadow: 0 7px 15px #c1c1c1;
+          box-shadow: 0 7px 15px #c1c1c1;
+}
+
+section#section_booking .booking_block .nav-tabs {
+  border: none;
+}
+
+section#section_booking .booking_block .nav-tabs .nav-link {
+  border: none;
+  font-family: "Rubik";
+  color: #231f20;
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0 2rem;
+  margin-left: 0;
+}
+
+section#section_booking .booking_block .nav-tabs .nav-link.active {
+  border-bottom: 2px solid #59d389;
+}
+
+section#section_booking .booking_block .control_span {
+  display: none;
+}
+
+section#section_booking .booking_block .control_span.active {
+  display: block;
+}
+
+section#section_booking .booking_block .item-book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem 0;
+}
+
+section#section_booking .booking_block .item-book .book1 {
+  max-width: 100%;
+  width: 15rem;
+  height: 9rem;
+}
+
+section#section_booking .booking_block .item-book .book2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 1.5rem;
+}
+
+section#section_booking .booking_block .item-book .book2 .hb2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+section#section_booking .booking_block .item-book .book2 .hb2 .namecar {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+section#section_booking .booking_block .item-book .book2 .hb2 .bookGreen {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1rem;
+}
+
+section#section_booking .booking_block .item-book .book2 .hb2 .bookGreen img {
+  height: 10px;
+  margin-right: 7px;
+}
+
+section#section_booking .booking_block .item-book .book2 .hb2 .bookGreen p {
+  color: #59d389;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+section#section_booking .booking_block .item-book .book2 .hb2 .bookRed {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1rem;
+}
+
+section#section_booking .booking_block .item-book .book2 .hb2 .bookRed img {
+  height: 10px;
+  margin-right: 7px;
+}
+
+section#section_booking .booking_block .item-book .book2 .hb2 .bookRed p {
+  color: red;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+section#section_booking .booking_block .item-book .book2 .bb2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+section#section_booking .booking_block .item-book .book2 .bb2 .column1_bb2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 20px;
+  margin-left: 0;
+}
+
+section#section_booking .booking_block .item-book .book2 .bb2 .column1_bb2 .bb21 {
+  margin: 5px 0;
+}
+
+section#section_booking .booking_block .item-book .book2 .bb2 .column1_bb2 p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+section#section_booking .booking_block .item-book .book2 .bb2 .column1_bb2 .time {
+  font-size: 0.9rem;
+  font-family: "Rubik";
+}
+
+section#section_booking .booking_block .item-book .book3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+}
+
+section#section_booking .booking_block .item-book .book3 img {
+  border-radius: 50%;
+  border: 1px solid #c1c1c1;
+  width: 4rem;
+}
+
+section#section_booking .booking_block .item-book .book3 .username {
+  margin-left: 7px;
+  font-size: 0.9rem;
+}
+
+section#section_booking .booking_block .item-book .book3 .username a {
+  color: #231f20;
+  font-family: "Rubik";
+}
+
+section#section_booking .booking_block .item-book .book4 {
+  margin-left: 2rem;
+}
+
+section#section_booking .booking_block .book_confirmed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #59d389;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+section#section_booking .booking_block .book_confirmed img {
+  margin-right: 7px;
+}
+
+section#section_booking .booking_block .book_confirmed p {
+  color: #59d389;
+  margin: 0;
+}
+
+section#section_booking .booking_block .book_confirmed .canceled_green {
+  position: absolute;
+  right: 1rem;
+  top: 13px;
+}
+
+section#section_booking .booking_block .pagination_mybook {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#section_booking .booking_block .pagination_mybook .prev, section#section_booking .booking_block .pagination_mybook .next {
+  font-size: 0.8rem;
+  color: #231f20;
+  font-family: "Rubik";
+}
+
+section#section_booking .booking_block .pagination_mybook .prev img, section#section_booking .booking_block .pagination_mybook .next img {
+  height: 9px;
+  margin: 0 5px;
+}
+
+section#section_booking .booking_block .pagination_mybook .numbersP {
+  margin: 0 3rem;
+}
+
+section#section_booking .booking_block .pagination_mybook .numbersP .num {
+  color: #231f20;
+  font-family: "Rubik";
+  font-size: 0.8rem;
+  margin: 0 6px;
+  padding: 7px 10px;
+  padding-right: 11px;
+}
+
+section#section_booking .booking_block .pagination_mybook .numbersP .activeNum {
+  background-color: #59d389;
+  padding: 7px 10px;
+  padding-right: 11px;
+  border-radius: 2px;
+  color: white;
+  -webkit-box-shadow: 0 7px 15px #c1c1c1;
+          box-shadow: 0 7px 15px #c1c1c1;
+}
+
+section#booking_process {
+  padding-top: 2rem;
+  padding: 4rem 0;
+}
+
+section#booking_process .booking_heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#booking_process .booking_heading p {
+  font-size: 0.9rem;
+  color: #231f20;
+  margin: 0 2rem;
+}
+
+section#booking_process .booking_heading .pseudoBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 20px;
+  border-radius: 22px;
+  background: transparent;
+  border: 1px solid #59d389;
+  margin-left: 2rem;
+}
+
+section#booking_process .booking_heading .pseudoBtn img {
+  height: 10px;
+  margin-right: 7px;
+}
+
+section#booking_process .booking_heading .pseudoBtn p {
+  color: #59d389;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+section#booking_process .mainBookingContainer {
+  -webkit-box-shadow: 0 7px 15px #c1c1c1;
+          box-shadow: 0 7px 15px #c1c1c1;
+  padding: 2rem 2.5rem;
+}
+
+section#booking_process .mainBookingContainer .mainBookContainerLeft, section#booking_process .mainBookingContainer .mainBookContainerRight {
+  width: 50%;
+  padding: 0 12px;
+}
+
+section#booking_process .mainBookingContainer h5 {
+  font-family: 'Merriweather', sans-serif;
+}
+
+section#booking_process .mainBookingContainer .row {
+  margin: 0;
+}
+
+section#booking_process .mainBookingContainer .pictureCar img {
+  max-width: 100%;
+  height: 8rem;
+  width: 13rem;
+}
+
+section#booking_process .mainBookingContainer .infoCar {
+  margin-left: 1rem;
+}
+
+section#booking_process .mainBookingContainer .infoCar .autoname {
+  margin: 0;
+}
+
+section#booking_process .mainBookingContainer .infoCar .freeCancel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+section#booking_process .mainBookingContainer .infoCar .freeCancel img {
+  width: 2rem;
+}
+
+section#booking_process .mainBookingContainer .infoCar .freeCancel .freeblack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 1rem;
+}
+
+section#booking_process .mainBookingContainer .infoCar .freeCancel .freeblack h6 {
+  color: #59d389;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+section#booking_process .mainBookingContainer .infoCar .freeCancel .freeblack p {
+  font-size: 0.8rem;
+  opacity: .5;
+  margin-top: 3px;
+}
+
+section#booking_process .mainBookingContainer .s2_user, section#booking_process .mainBookingContainer .s2_period {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem 0;
+}
+
+section#booking_process .mainBookingContainer .s2_user .tmpl, section#booking_process .mainBookingContainer .s2_period .tmpl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#booking_process .mainBookingContainer .s2_user h6, section#booking_process .mainBookingContainer .s2_period h6 {
+  font-family: 'Merriweather', sans-serif;
+}
+
+section#booking_process .mainBookingContainer .s2_user .usernamus, section#booking_process .mainBookingContainer .s2_period .usernamus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#booking_process .mainBookingContainer .s2_user .usernamus img, section#booking_process .mainBookingContainer .s2_period .usernamus img {
+  width: 4rem;
+  border-radius: 50%;
+  border: 1px solid #c1c1c1;
+  margin-right: 7px;
+}
+
+section#booking_process .mainBookingContainer .s2_user .usernamus .username a, section#booking_process .mainBookingContainer .s2_period .usernamus .username a {
+  color: #231f20;
+  font-family: "Rubik";
+  font-size: 0.9rem;
+}
+
+section#booking_process .mainBookingContainer .s2_user .column1_bb2, section#booking_process .mainBookingContainer .s2_period .column1_bb2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 20px;
+  margin-left: 0;
+}
+
+section#booking_process .mainBookingContainer .s2_user .column1_bb2 .bb21, section#booking_process .mainBookingContainer .s2_period .column1_bb2 .bb21 {
+  margin: 5px 0;
+}
+
+section#booking_process .mainBookingContainer .s2_user .column1_bb2 p, section#booking_process .mainBookingContainer .s2_period .column1_bb2 p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+section#booking_process .mainBookingContainer .s2_user .column1_bb2 .time, section#booking_process .mainBookingContainer .s2_period .column1_bb2 .time {
+  font-size: 0.9rem;
+  font-family: "Rubik";
+}
+
+section#booking_process .mainBookingContainer .s2_user {
+  margin-right: 5rem;
+}
+
+section#booking_process .mainBookingContainer .book_confirmed {
+  border: 2px solid #59d389;
+  padding: 0.5rem 1rem;
+}
+
+section#booking_process .mainBookingContainer .book_confirmed p {
+  color: #59d389;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+section#booking_process .mainBookingContainer .row_oplataotmena a {
+  margin: 3rem 0;
+  margin-right: 20px;
+}
+
+section#booking_process .mainBookingContainer .row_oplataotmena .btn_no {
+  color: #231f20;
+}
+
+section#booking_process .mainBookingContainer .make_review textarea {
+  margin: 1rem 0;
+  width: 100%;
+  resize: none;
+  border: 1px solid #c1c1c1;
+  padding: 7px 15px;
+  height: 9rem;
+}
+
+section#booking_process .mainBookingContainer .make_review textarea:focus {
+  outline: none;
+}
+
+section.section1_passcar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem 0;
+  padding-bottom: 6rem;
+  background-image: url(../img/pass/s1_background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section.section1_passcar h2 {
+  text-align: center;
+  color: white;
+  font-size: 2.3rem;
+  margin-top: 4rem;
+  line-height: 60px;
+}
+
+section.section1_passcar h2 span {
+  font-size: 3rem;
+  font-family: 'Merriweather', sans-serif;
+}
+
+section.section1_passcar .passcar_p1 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 300;
+}
+
+section.section1_passcar .s1_passBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3rem 0;
+}
+
+section.section1_passcar .s1_passBtn a {
+  padding: 0.9rem 2.3rem;
+}
+
+section.section1_passcar .s1_groupBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.section1_passcar .s1_groupBtn a {
+  display: inline-block;
+  margin: 1rem;
+}
+
+section.section2_passcar {
+  margin: 3rem 0;
+}
+
+section.section2_passcar .passcarInp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.section2_passcar .passcarInp .selects .select-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.section2_passcar .passcarInp .selects .select-group select {
+  margin-right: 20px;
+  padding: 5px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 0;
+  height: 2.25rem;
+  width: 12rem;
+  padding-bottom: 6px;
+}
+
+section.section2_passcar .passcarInp .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.section2_passcar .passcarInp .form-group h6, section.section2_passcar .passcarInp .form-group label {
+  margin-bottom: 5px;
+  font-family: "Rubik-Bold";
+}
+
+section.section2_passcar .passcarInp .form-group input {
+  width: 12rem;
+  margin-right: 20px;
+  padding: 5px 15px;
+  height: 2.25rem;
+  border: 1px solid #ced4da;
+  padding-bottom: 6px;
+}
+
+section.section2_passcar .passcarInp select {
+  margin-right: 20px;
+  padding: 5px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 0;
+  height: 2.25rem;
+  width: 12rem;
+  padding-bottom: 6px;
+}
+
+section.section2_passcar .passcarInp .select2-container {
+  margin-right: 20px;
+  padding: 5px 10px !important;
+  border: 1px solid #ced4da !important;
+  border-radius: 0;
+  height: 2.25rem !important;
+  width: 12rem !important;
+  padding-bottom: 6px !important;
+}
+
+section.section2_passcar .passcarInp .select2-container:focus {
+  outline: none;
+}
+
+section.section2_passcar .passcarInp .select2-selection__rendered {
+  line-height: 25px;
+}
+
+section.section2_passcar .passcarInp .select2-selection--single {
+  background-color: white;
+  border: none;
+}
+
+section.section2_passcar .passcarInp .select2-selection--single:focus {
+  outline: none;
+}
+
+section.section2_passcar .passcarInp .select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 31px;
+}
+
+section.section2_passcar .passcarButtons2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+  margin-bottom: 3rem;
+}
+
+section.section2_passcar .passcarButtons2 div.big_button {
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  margin: 0 16px;
+  color: #231f20;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.section2_passcar .passcarButtons2 div.big_button div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #231f20;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.section2_passcar .passcarButtons2 div.big_button div span {
+  font-family: "Rubik-Bold";
+}
+
+section.section2_passcar .passcarButtons2 .main_button {
+  width: 12rem;
+}
+
+section.section2_passcar .s2Passcar {
+  width: 36rem;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+section.section2_passcar {
+  margin: 3rem 0;
+}
+
+section.section2_passcar .section2_passcar_h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+section.section2_passcar .item_grey {
+  background-color: #f7f7f7;
+  padding: 2rem 3rem;
+  color: #231f20;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1.8rem;
+}
+
+section.section2_passcar .item_grey .main_button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 1rem;
+}
+
+section.section2_passcar .item_grey .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.section2_passcar .item_grey .heading img {
+  width: auto;
+  margin-right: 1rem;
+}
+
+section.section2_passcar .item_grey .content_item {
+  margin-top: 1rem;
+  line-height: 28px;
+}
+
+section.section2_passcar .item_abs {
+  position: relative;
+  top: -8rem;
+  padding-bottom: 3.55rem;
+}
+
+section.section2_passcar .item_green {
+  background-color: #59d389;
+  color: white;
+  height: calc(100% - 2rem);
+}
+
+section.section2_passcar .item_green .main_button {
+  background-color: white;
+  color: #59d389;
+}
+
+section.section2_passcar .item_green .main_button:hover {
+  background-color: #efefef;
+  color: #59d389;
+}
+
+section.section2_passcar .row_unstoppable {
+  position: relative;
+  top: -8rem;
+}
+
+section.section3_passcar {
+  margin: 3rem 0;
+  margin-top: -4rem;
+}
+
+section.section3_passcar .innerPasscar {
+  border: 4px solid #59d389;
+  padding: 3rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.section3_passcar .innerPasscar .ps3 {
+  font-size: 1.1rem;
+}
+
+section.section3_passcar .innerPasscar .ps3_cont {
+  margin: 3rem 0;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.section3_passcar .innerPasscar .ps3_cont .inner_ps3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.section3_passcar .innerPasscar .ps3_cont .inner_ps3 img {
+  width: auto;
+  margin-right: 1rem;
+}
+
+section.section3_passcar .innerPasscar .ps3_cont .inner_ps3 p {
+  margin-left: 1.5rem;
+}
+
+section.section3_passcar .innerPasscar .ps3_cont .ps_green {
+  background-color: #59d38929;
+}
+
+section.section3_passcar .innerPasscar .ps3_cont .ps_light {
+  background-color: white;
+}
+
+section.section4_passcar {
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+section.section4_passcar .innerPasscar4 {
+  background: url(../img/pass/pass_s4.png);
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 1rem;
+  border-radius: 3px;
+  margin: 4rem 0;
+}
+
+section.section4_passcar .innerPasscar4 h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+section.section4_passcar .innerPasscar4 h2::after {
+  position: absolute;
+  top: 4.2rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  content: '';
+  background: white;
+  height: 1px;
+  width: 100px;
+}
+
+section.section4_passcar .innerPasscar4 .inner_p {
+  font-size: 1rem;
+  line-height: 27px;
+  color: white;
+  width: 29rem;
+  text-align: center;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+section.section4_passcar .innerPasscar4 .main_button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 2rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+section.section5_passcar {
+  margin: 4rem 0;
+}
+
+section.section5_passcar .innerPasscar5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.section5_passcar .innerPasscar5 h2 {
+  text-align: left;
+  width: 34rem;
+  max-width: 100%;
+  margin-right: 2rem;
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+section.section5_passcar .innerPasscar5 .faqs_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.section5_passcar .innerPasscar5 .faqs_block .faq_item {
+  background-color: #35b668;
+  padding: 1.3rem 3rem;
+  position: relative;
+  margin: 2px 0;
+  cursor: pointer;
+}
+
+section.section5_passcar .innerPasscar5 .faqs_block .faq_item p {
+  margin: 0;
+  color: white;
+  margin-right: 2rem;
+}
+
+section.section5_passcar .innerPasscar5 .faqs_block .faq_item img {
+  top: 48%;
+  position: absolute;
+  border: none;
+  width: 10px;
+  height: 6px;
+  right: 2rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section.section5_passcar .innerPasscar5 .hidden_span {
+  display: none;
+  margin: 1rem 3rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  #navbarNavDropdown {
+    margin-top: 1.8rem;
+  }
+  #navbarNavDropdown .nav-link {
+    margin-left: 0 !important;
+  }
+  #section1 .nav-buttons {
+    margin-left: 1rem;
+    margin-right: auto;
+  }
+  #section3 .s3_haveauto {
+    position: relative;
+    width: auto;
+  }
+  #section3 {
+    padding-bottom: 4rem;
+  }
+  #section4 {
+    padding-top: 4rem;
+  }
+  .section1_account .btn-profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 1rem 0;
+  }
+  .section1_account .btn-profile .dropdown-menu {
+    background-color: #231f20;
+  }
+  .section1_account .btn-profile .dropdown-menu .dropdown-item {
+    text-align: left;
+    padding-left: 0;
+  }
+  .section1_account .btn-profile .dropdown-menu .dropdown-item:hover {
+    background-color: #231f20;
+  }
+  .section1_account .header_search {
+    margin-right: auto;
+  }
+  #section_account .profile_mycar .card_auto .autopic {
+    left: -62px;
+    position: relative;
+  }
+  .section1_account .tire {
+    top: 0;
+  }
+  .section1_account .group-inp-catalog {
+    height: 28px;
+  }
+  .section1_account .group-inp-catalog input {
+    margin-left: 0;
+  }
+  .section1_account .group-inp-catalog .c_dark {
+    position: absolute;
+    left: 11px;
+    top: 5px;
+  }
+  .section1_account .group-inp-catalog .arrow {
+    position: absolute;
+    width: 9px;
+    height: 4px;
+    left: 187px;
+    top: 14px;
+    right: auto;
+  }
+  .section_someauto2 .inner_left .item-row {
+    margin: 2.5rem 1rem;
+  }
+  section.section_someauto .inner_dark .dark_board {
+    width: 55%;
+  }
+  section#section_booking .booking_block .item-book {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section#section_booking .booking_block .item-book .book4 {
+    margin-top: 1rem;
+    margin-left: 0;
+    width: 15rem;
+  }
+  section#booking_process .mainBookingContainer .pictureCar {
+    width: 100%;
+  }
+  section#booking_process .mainBookingContainer .pictureCar img {
+    width: 100%;
+    height: auto;
+  }
+  section#booking_process .mainBookingContainer .infoCar {
+    margin: 1rem 0;
+  }
+  section.section2_passcar .item_abs {
+    top: -6rem;
+  }
+  section.section2_passcar .grey_lg {
+    padding-bottom: 3.1rem;
+  }
+  section.section2_passcar .row_unstoppable {
+    top: -5.7rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #section3 .s3_haveauto h2::after {
+    top: 110px;
+  }
+  footer .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 1rem;
+  }
+  section.auth .form_block form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.auth .form_block form .a_signin_column, section.auth .form_block form .a_signup_column {
+    width: 100%;
+  }
+  #section_account .profile1, #section_account .settings1 {
+    margin-top: 2rem;
+  }
+  #section_addcar form #app-old .row .group_carselect {
+    top: 1px;
+  }
+  #section_myauto .upper_block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  section.section_someauto .inner_dark .dark_board {
+    width: calc( 100% - 2rem);
+    bottom: 6rem;
+    left: 1rem;
+  }
+  section.section_someauto .container {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section.section_someauto .inner_dark .green_price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-radius: 0;
+    position: relative;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  section.section_someauto .inner_dark .green_price h5 {
+    width: auto;
+    min-width: auto;
+    margin: 0;
+    margin-left: 2rem;
+    position: relative;
+    top: 7px;
+  }
+  section.section_someauto .inner_dark .green_price a.main_button {
+    display: inline-block;
+    margin-right: 2rem;
+    font-size: 1rem;
+    border: 2px solid #fff;
+  }
+  section.section_someauto2 .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.section_someauto2 .inner_left, section.section_someauto2 .inner_right {
+    width: 100%;
+  }
+  section.section_someauto2 .inner_left {
+    padding-right: 0;
+  }
+  #section_booking .container {
+    max-width: 100%;
+  }
+  section#section_booking .booking_block .item-book .book3 {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  section#section_booking .booking_block .item-book {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  section#section_booking .booking_block .item-book .book2 .hb2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  section#section_booking .booking_block .item-book .book2 .hb2 .bookGreen, section#section_booking .booking_block .item-book .book2 .hb2 .bookRed {
+    margin-left: 0;
+  }
+  section#section_booking .booking_block .item-book .book2 {
+    margin-right: auto;
+  }
+  section#section_booking .booking_block .item-book .book4 {
+    width: 100%;
+  }
+  section.section2_passcar .s2Passcar {
+    display: none;
+  }
+  section.section2_passcar .passcarInp .form-group label {
+    margin-top: 0.7rem;
+  }
+  section.section2_passcar .item_abs {
+    top: 0;
+    padding-bottom: 2rem;
+  }
+  section.section2_passcar .grey_lg {
+    padding-bottom: 2rem;
+  }
+  section.section2_passcar .row_unstoppable {
+    top: 0;
+    margin-bottom: 7rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section1 .nav-buttons-desktop {
+    display: none;
+  }
+  #section1 .nav-buttons-smart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  #section1 .nav-buttons-smart a {
+    margin: 3px;
+  }
+  #section1 .main_content .select_group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #section1 .main_content .select_group .groupcity .select2.select2-container {
+    border-radius: 23px !important;
+    left: 0px;
+    padding-left: 42px;
+    width: 23rem !important;
+  }
+  #section1 .select2-selection--single .select2-selection__arrow b {
+    border-color: #888 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    height: 0;
+    left: 0;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 25px;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    width: 0;
+  }
+  #section1 .main_content .select_group .groupcity .select2.select2-container .select2-selection {
+    border-radius: 23px !important;
+  }
+  #section1 .main_content .select_group .groupdata input {
+    width: 25rem;
+  }
+  #section1 .main_content .select_group .groupdata .data_png {
+    left: 37px;
+  }
+  #section1 .main_content .select_group .groupcity {
+    margin-top: 1rem;
+  }
+  #section1 .main_content .select_group .find_auto {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    width: 83%;
+  }
+  #section1 .main_content .select_group {
+    border-radius: 10px;
+  }
+  #section1 .main_content .select_group .groupdata input {
+    padding-left: 65px;
+  }
+  #section1 .main_content h1 {
+    margin-top: 0;
+    padding: 0 15px;
+  }
+  #section1 .main_content h2 {
+    padding: 0 15px;
+    margin-bottom: 0;
+  }
+  #section3 .card_auto .autopic {
+    height: auto;
+    width: 100%;
+  }
+  #section3 h2::after {
+    top: 107px;
+  }
+  section.auth .form_block form .a_sign_socials {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+  }
+  section.auth .form_block {
+    max-width: 100%;
+  }
+  #section1.section1_account .select2-selection--single .select2-selection__arrow b {
+    top: 16px;
+  }
+  #section_account .review_auto .header_review, #section_account .review_trips .header_review {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #section_account .review_auto .content_review .review_img, #section_account .review_trips .content_review .review_img {
+    display: block;
+    margin: 12px auto;
+  }
+  #section_account .review_auto .content_review .someReview p, #section_account .review_trips .content_review .someReview p {
+    text-align: center;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #section_account .review_auto .content_review .someReview .footer_review, #section_account .review_trips .content_review .someReview .footer_review {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #section_account .review_auto .main_button, #section_account .review_trips .main_button, #section_account .profile1 a {
+    display: block !important;
+    margin: 0 auto;
+    width: 10rem;
+  }
+  #section_account .profile1 a {
+    margin-top: 1rem;
+  }
+  #section_account .review_empty .content_review_empty {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #section_account .profile1 h6 {
+    text-align: center;
+  }
+  #section_account .profile1 p {
+    text-align: center;
+  }
+  #section_account h2, #section_account .mycar_caption {
+    text-align: center;
+  }
+  #section_account .settings1 .s1_inputs, #section_account .settings1 .inp_datas, #section_account .settings1 .verify .verify_phone, #section_account .settings1 .verify .verify_email {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #section_account .settings1 .inp_datas .group, #section_account .settings1 .verify .verify_phone input, #section_account .settings1 .verify .verify_email input {
+    width: 100%;
+  }
+  #section_account .main_button_save {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #section_addcar .container {
+    max-width: 100%;
+  }
+  #section_myauto .card_auto .autopic {
+    width: 100%;
+    height: auto;
+  }
+  #section_myauto .card_auto .statuscar {
+    position: absolute;
+    padding: 0 1rem;
+    left: 1rem;
+    bottom: 9rem;
+    background-color: #111;
+    opacity: .8;
+    top: auto;
+  }
+  section.section_someauto2 .container {
+    max-width: 100%;
+  }
+  section.section_someauto2 .inner_left .mainprofile .nameUser {
+    word-break: break-word;
+  }
+  section.section_reviews .review_review .header_review, section.section_reviews .review_review .content_review .someReview .footer_review {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.section_reviews .review_review .header_review .footer_card, section.section_reviews .review_review .content_review .someReview .footer_review .footer_card {
+    padding-left: 0;
+  }
+  section#section_booking .booking_block .item-book .book2 {
+    width: 100%;
+    margin-left: 0;
+  }
+  section#section_booking .booking_block .item-book .book1 {
+    width: 100%;
+    height: auto;
+  }
+  section#section_booking .booking_block .item-book .book2 .hb2 {
+    margin: 1rem 0;
+  }
+  section#booking_process .container {
+    max-width: 100%;
+  }
+  section#booking_process .mainBookingContainer {
+    height: 116rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#booking_process .mainBookingContainer .mainBookContainerRight, section#booking_process .mainBookingContainer .mainBookContainerLeft {
+    width: 100%;
+  }
+  section#booking_process .mainBookingContainer .mainBookContainerRight {
+    position: relative;
+    top: -56rem;
+    max-width: 100%;
+  }
+  section#booking_process .row_oplataotmena {
+    margin-top: 30rem !important;
+  }
+  section.section2_passcar .container, section.section3_passcar .container, section.section4_passcar .container, section.section5_passcar .container {
+    max-width: 100%;
+  }
+  section.section5_passcar .innerPasscar5 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.section5_passcar .innerPasscar5 h2 {
+    text-align: center;
+    margin: 2rem auto;
+    margin-top: 1rem;
+  }
+  section.section3_passcar .innerPasscar {
+    padding: 3rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #section1 .main_content .socials1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0;
+  }
+  #section1 .main_content .socials1 a {
+    margin: 5px 0;
+  }
+  #section1 .main_content .select_group {
+    margin: 2rem 0;
+  }
+  #section1 .main_content .select_group .groupdata input {
+    width: 20rem;
+  }
+  #section1 .main_content .select_group .groupcity .select2.select2-container {
+    width: 18rem !important;
+  }
+  #section1 .main_content h1 {
+    font-size: 2rem;
+  }
+  body h2 {
+    font-size: 2rem !important;
+  }
+  #section1 .main_content h2 {
+    font-size: 1rem !important;
+  }
+  #section1 .main_content {
+    padding: 2rem 0;
+  }
+  #section3 .s3_haveauto h2::after {
+    display: none;
+  }
+  footer {
+    padding-bottom: 2rem;
+  }
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .menu {
+    margin-bottom: 1rem;
+  }
+  #section_account .profile_mycar .card_auto .autopic {
+    height: auto;
+    left: auto;
+    width: 100%;
+  }
+  .section1_account .header_search_smart {
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+  .section1_account .header_search_desktop {
+    display: none;
+  }
+  #section_account .review_auto .header_review h6, #section_account .review_trips .header_review h6 {
+    text-align: center;
+  }
+  #section_account .settings1 .inp_datas .group label {
+    font-size: 0.8rem;
+  }
+  #section_addcar .firstcarinfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #section_addcar .firstcarinfo .group_carselect .selects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #section_addcar .firstcarinfo .group_carselect .selects .select-group:first-child {
+    margin-bottom: 1.2rem;
+  }
+  #section_addcar .transmission {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  #section_addcar .transmission .custom-control {
+    margin-left: 0 !important;
+  }
+  #section_addcar form #app-old .photo_auto .edit_delete_docs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #section_addcar .group_carselect .select-group, #section_addcar .group_carselect .select-group select, #section_addcar #inp_year, #section_addcar #inp_mileage, #section_addcar #inp_vin, #section_addcar #inp_num, #section_addcar #inp_fuel, #section_addcar #inp_cons {
+    width: 100% !important;
+  }
+  #section_addcar .parametr_row input {
+    width: 100%;
+  }
+  #section_addcar form #app-old .parametr_row .form-group {
+    width: 100%;
+  }
+  #section_addcar form #app-old .parametr_row .form-group span {
+    right: 18px;
+  }
+  #section_myauto .upper_block .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  #section_myauto .upper_block .buttons a {
+    margin: 0.3rem 0;
+  }
+  #section_myauto .upper_block h2, #section_myauto_empty .upper_block h2 {
+    text-align: center;
+  }
+  .section_someauto2 .inner_left .mainprofile {
+    margin-bottom: 3rem;
+  }
+  .section_someauto2 .inner_right {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  section.section_someauto .inner_dark .dark_board {
+    position: relative;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.section_someauto .inner_dark .dark_board span {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+  section.section_someauto .inner_dark .green_price {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.section_someauto .inner_dark .green_price h5 {
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+  section.section_someauto .inner_dark .green_price a {
+    margin: 0 1rem !important;
+  }
+  .section_someauto2 .inner_left .item-row {
+    margin: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  .section_someauto2 .inner_left .review_som .main_button {
+    left: auto;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .section_someauto2 .inner_left .mainprofile {
+    margin-bottom: 4rem;
+  }
+  section#section_booking .booking_block .nav-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  section#section_booking .booking_block .nav-tabs .nav-link {
+    margin: 0.5rem 0;
+  }
+  section#section_booking .booking_block {
+    padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  section#section_booking .booking_block .pagination_mybook .numbersP {
+    margin: 0 1rem;
+  }
+  section#section_booking .booking_block .pagination_mybook .numbersP .num {
+    margin: 0;
+  }
+  section#booking_process .booking_heading {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section#booking_process .booking_heading p {
+    margin: 10px 0;
+    margin-bottom: 1rem;
+  }
+  section#booking_process .mainBookingContainer {
+    padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  section#booking_process .mainBookingContainer .mainBookContainerLeft, section#booking_process .mainBookingContainer .mainBookContainerRight {
+    padding: 0;
+  }
+  section#booking_process .mainBookingContainer .s2_period, section#booking_process .mainBookingContainer .s2_user {
+    margin: 0 10px;
+  }
+  section#booking_process .mainBookingContainer .book_confirmed {
+    margin-top: 1rem;
+  }
+  section.section1_passcar a {
+    width: 14rem;
+    max-width: 100%;
+    padding: 0.7rem 1.8rem !important;
+    margin: 5px !important;
+  }
+  section.section1_passcar h2 {
+    line-height: 44px;
+    margin-top: 0;
+  }
+  section.section1_passcar h2 span {
+    font-size: 2rem;
+  }
+  section.section1_passcar .s1_passBtn {
+    margin: 1rem 0;
+    margin-top: 2rem;
+  }
+  section.section1_passcar .s1_passBtn a {
+    width: 20rem;
+    padding: 1.2rem 2.3rem !important;
+  }
+  section.section1_passcar .s1_groupBtn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  section#booking_process .mainBookingContainer {
+    height: 104rem;
+  }
+  .section2_passcar .selects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  section.section2_passcar .passcarInp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.section2_passcar .passcarInp input, section.section2_passcar .passcarInp select, section.section2_passcar .passcarInp .selects .select-group {
+    width: 100% !important;
+  }
+  section.section2_passcar .select2.select2-container.select2-container--default {
+    width: 100% !important;
+  }
+  section.section2_passcar .select2-container--default .select2-selection--single .select2-selection__arrow {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    width: 18px;
+  }
+  section.section3_passcar .innerPasscar {
+    padding: 3rem 10px;
+  }
+  section.section3_passcar .innerPasscar h2 {
+    word-break: break-word;
+    font-size: 1.5rem !important;
+  }
+  section.section3_passcar .innerPasscar .ps3_cont .inner_ps3 p {
+    margin-left: 0;
+  }
+  section.section2_passcar .item_grey .heading img {
+    width: 3rem;
+  }
+  section.section2_passcar .item_grey .heading h5 {
+    word-break: break-word;
+    font-size: 1rem;
+  }
+  section.section2_passcar .passcarButtons2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.section2_passcar .passcarButtons2 a {
+    margin: 5px 0;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  #section3 h2::after {
+    display: none;
+  }
+  #section3 .card_auto .carname {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #section3 .card_auto .carname span {
+    margin-bottom: 0.5rem;
+  }
+  #section_addcar form #app-old .photo_auto .edit_delete_docs {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #section_addcar form #app-old .row .form-group label {
+    font-size: 0.8rem;
+  }
+  section.section_someauto .inner_dark .owl-carousel .owl-nav button.owl-prev {
+    left: 1rem;
+    top: -1rem;
+  }
+  section.section_someauto .inner_dark .owl-carousel .owl-nav button.owl-next {
+    right: 1rem;
+    top: -1rem;
+  }
+  .section_someauto2 .inner_right {
+    padding: 2rem 0;
+  }
+  section#section_booking .booking_block .pagination_mybook {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#section_booking .booking_block .pagination_mybook .prev, section#section_booking .booking_block .pagination_mybook .next {
+    margin: 0.7rem 0;
+  }
+  section#booking_process .mainBookingContainer {
+    height: 109rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,184 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RocketRead тестовый курс</title>
+  <meta name="description" content="SpeedReading App">
+
+  <link rel="stylesheet" href="css/normalize.css?v=1.0">
+  <link rel="stylesheet" href="css/main.css?v=1.0">
+  <link rel="stylesheet" href="css/sweetalert.css?v=1.0">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+	<div id="page-wrapper">
+
+		<!--<header id="header">
+		  <div class="pure-g container clearfix">
+		    <div class="pure-u-1-2">
+		    	<h1>RocketRead Demo</h1>
+		    </div>
+		  </div>
+		</header>-->
+
+		<div id="content" class="container">
+			
+			<div id="progress">
+				<div class="tasks">Все упражнения:</div>
+				<!--<div class="sub-title">Progress:</div>-->
+				<div class="progress pure-g text-center">
+					<div class="progress-item">
+						<div class="step">
+							<a href="index.html">1. Таблица Шульте</a>
+						</div>
+					</div>
+					<div class="progress-item">
+						<div class="step">
+							<a href="fast-words.html">2. Карусель слов</a>
+						</div>
+					</div>
+					<div class="progress-item">
+						<div class="step">
+							<a href="phrase.html">3. Чтение фразами</a>
+						</div>
+					</div>
+					
+					<div class="progress-item">
+						<div class="step">
+							<a href="regression.html">4. Регрессия</a>
+						</div>
+					</div>
+					<div class="progress-item">
+						<div class="step">
+							<a href="schulte-5-5.html">5. Шульте 5x5</a>
+						</div>
+					</div>
+					<div class="progress-item">
+						<div class="step">
+							<a href="inverted-text.html">6. Перевёрнутый текст</a>
+						</div>
+					</div>
+					
+					<div class="progress-item">
+						<div class="step">
+							<a href="sprint.html">7. Спринт</a>
+						</div>
+					</div>
+					<div class="progress-item first">
+						<div class="step">
+							<span>8. Карусель слов 2</span>
+						</div>
+					</div>
+					<div class="progress-item">
+						<div class="step">
+							<a href="regression-harder.html">9. Регрессия сложнее</a>
+						</div>
+					</div>
+					<div class="progress-item last">
+						<div class="step">
+							<a href="finish.html">10. Финал</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="ex-wrap">
+				<div class="text-box">
+					<div id="text">
+						
+					</div>
+					<div id="display-wrap" class="fast-words text-center" style="min-height: unset;">
+						<div id="display">
+							
+						</div>
+					</div>
+				</div>
+				<div id="answers">
+					<!--<div class="right-answer" style="display: none;"></div>-->
+					
+				</div>
+				<div class="text-center">
+					<button id="play">Начать!</button>
+					<!--<label for="speed" style="display: none;">Speed: </label>
+					<button id="stop" class="grey" style="display: none;">Stop</button>-->
+				</div>
+			</div>
+
+		</div>
+
+	</div><!-- /#page-wrapper -->
+
+
+	<div aria-hidden="true" class="onboarding-modal modal fade animated" id="fast-word3" role="dialog" tabindex="-1">
+			<div class="modal-dialog modal-centered" role="document">
+				<div class="modal-content text-center">
+					<div class="onboarding-media">
+						<img alt="" src="img/bigicon2.png" width="200px">
+					</div>
+					<div class="onboarding-content with-gradient">
+						<h4 class="onboarding-title">
+							Карусель слов
+						</h4>
+						<div class="onboarding-text">
+							Это упражнение уже было, увеличиваем сложность! 
+							<br>
+							<br>
+							В этом упражнении в текстовом поле последовательно показывается несколько похожих слов. Задача правительно выбрать последнее показанное слово.
+						</div>
+						<button class="slick-next slick-arrow" aria-label="Close" type="button" style="" aria-disabled="false" data-dismiss="modal">Начать</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	
+	
+		<div aria-hidden="true" class="onboarding-modal modal fade animated" id="fast-word4" role="dialog" tabindex="-1">
+			<div class="modal-dialog modal-centered" role="document">
+				<div class="modal-content text-center">
+					<div class="onboarding-media">
+						<img alt="" src="img/bigicon2.png" width="200px">
+					</div>
+					<div class="onboarding-content with-gradient">
+						<h4 class="onboarding-title">
+							Отлично!
+						</h4>
+						<div class="onboarding-text">
+							<h4>Время: <span>test</span></h4>
+							<h4>Процент правильных ответов: <span>test</span></h4>
+							<img class="success_modal_img" src="img/success.png" alt="png">	
+						</div>
+						<button class="slick-next slick-arrow" type="button" style="" aria-disabled="false" data-dismiss="modal">Дальше</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--<footer id="footer">
+		<div class="container">
+	  	<div class="footer-container">
+			  2018 &copy; RocketRead
+	  	</div>
+		</div>
+	</footer>-->
+
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="js/lib/store.min.js"></script>
+  <script src="js/lib/sweetalert.min.js"></script>
+  <script src="js/fast-words-harder.js"></script>
+    <script type="text/javascript">
+  	$(".tasks").on('click', function() {
+  		$(".progress").slideToggle();
+  	});
+  </script>
+
+</body>
+</html>

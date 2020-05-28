@@ -1,0 +1,115 @@
+<!DOCTYPE>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Таблица Шульте</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet" charset="utf-8" />
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="operateZone">
+		<form name="clockform">
+			<p>Время:
+				<input id="clock" name="clock" size="12" maxlength="12" value="00:00:00.00">
+				<input name="label" style="display: none;" size="12" maxlength="40" value="">
+				<input name="starter" type="button" value="Старт" onclick="findTIME()">
+				<input name="clearer" type="button" value="Сбросить всё" onclick="clearALL()">
+			</p>
+			<p id="marker">
+			</p>
+		</form>
+		<script type="text/javascript">
+			function trim(string) {
+				return string.replace(/\s+/g, " ").replace(/(^\s*)|(\s*)$/g, '');
+			}
+			var init = 0;
+			var startDate, thisDate, tdiff;
+			var clocktimer;
+			var sum = 0;
+
+			function clearFields() {
+				init = 0;
+				clearTimeout(clocktimer);
+				document.clockform.clock.value = '00:00:00.00';
+				document.clockform.label.value = '';
+			}
+
+			function clearALL() {
+				clearFields();
+				document.getElementById('marker').innerHTML = '';
+				sum = 0;
+				/*document.getElementById('markerSum').innerHTML = '';*/
+			}
+
+			function timeToStr(t) {
+				var ms = t % 1000;
+				t -= ms;
+				ms = Math.floor(ms / 10);
+				t = Math.floor(t / 1000);
+				var s = t % 60;
+				t -= s;
+				t = Math.floor(t / 60);
+				var m = t % 60;
+				t -= m;
+				t = Math.floor(t / 60);
+				var h = t % 60;
+				if (h < 10) h = '0' + h;
+				if (m < 10) m = '0' + m;
+				if (s < 10) s = '0' + s;
+				if (ms < 10) ms = '0' + ms;
+				return h + ':' + m + ':' + s + '.' + ms;
+			}
+
+			function startTIME() {
+				thisDate = new Date();
+				tdiff = thisDate.getTime() - startDate.getTime();
+				var str = timeToStr(tdiff);
+				if (init == 1) document.clockform.clock.value = str;
+				clocktimer = setTimeout("startTIME()", 10);
+			}
+
+			function findTIME() {
+				if (init == 0) {
+					startDate = new Date();
+					startTIME();
+					init = 1;
+				} else {
+					sum += tdiff;
+					var str = trim(document.clockform.label.value);
+					clearFields();
+				}
+			}
+		</script>
+	</div>
+	<div class="container">
+		<div class="type">
+			<div class="title">Тип таблицы</div>
+			<div class="item">
+				<input type="radio" name="type" value="num1" id="num1">
+				<label for="num1" data-num="4" class="chooseType">1-16</label>
+			</div>
+			<div class="item">
+				<input type="radio" data-num="5" name="type" value="num2" checked="checked" id="num2">
+				<label for="num2" class="chooseType">1-25</label>
+			</div>
+		</div>
+
+		<div id="table">
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+</body>
+<script type="text/javascript" src="js/shulte.js"></script>
+
+</html>

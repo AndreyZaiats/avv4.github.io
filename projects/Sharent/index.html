@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Sierra Studio" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <title>Sharent | Аренда авто</title>
+
+    <style>
+        .alerts_block {
+            position: absolute;
+            bottom: 20px;
+            right: 30px;
+            z-index: 9999;
+        }
+
+        .alerts_relative {
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="section1">
+        <header class="header-main">
+            <div class="container">
+                <nav class="navbar navbar-expand-xl navbar-dark">
+                    <a class="navbar-brand" href="/">SHARENT</a>
+                    <div class="nav-buttons nav-buttons-desktop">
+                        <a href="./car/rent" class="main_button">Взять в аренду</a>
+                        <a href="./car/pass" class="secondary_button">Сдать в аренду</a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <div class="nav-buttons nav-buttons-smart">
+                            <a href="./car/rent" class="main_button">Взять в аренду</a>
+                            <a href="./car/pass" class="secondary_button">Сдать в аренду</a>
+                        </div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./car/rent">Как это работает?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контакты</a>
+                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./login">Вход</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./register">Регистрация</a>
+                                </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="main_content">
+            <h1>Аренда частных авто</h1>
+            <h2>Арендуйте авто рядом с вами и дешевле чем в компании</h2>
+
+            <form action="/car/catalog" method="post">
+            <div class="select_group">
+                <div class="groupcity">
+                    <img class="city_png" src="./img/section1_map.png" alt="png">
+                    <select class="select_city" name="city" style="background-color: white;">
+                        <option>Киев</option>
+                        <option>Харьков</option>
+                        <option>Днепр</option>
+                        <option>Львов</option>
+                        <option>Чернигов</option>
+                    </select>
+                </div>
+                <div class="groupdata">
+                    <img class="data_png" src="./img/section1_data.png" alt="png">
+                    <input placeholder="Выберите период" name="period" type="text" data-range="true" data-multiple-dates-separator=" - "
+                        class="datepicker-here" required />
+                </div>
+
+                <button type="button" class="find_auto landing_find main_button">Найти авто</button>
+            </div>
+            </form>
+
+                <div class="socials1">
+                    <a href="/oauth/p/google" class="enter_google"><img src="./img/google.png" alt="png"> Продолжить с <span>Google</span></a>
+                    <a href="/oauth/p/facebook" class="enter_facebook"><img src="./img/facebook.png" alt="png"> Продолжить с <span>Facebook</span></a>
+                </div>
+        </div>
+
+    </section>
+
+    <section id="section2">
+        <div class="container">
+            <h2>Аренда частных авто</h2>
+            <div class="row justify-content-center align-items-center mt-3">
+                <div class="col-12 col-md-6  mt-3">
+                    <img class="s2_main" src="./img/section2.png" alt="png">
+                </div>
+                <div class="col-12 col-md-6  mt-3">
+                    <div class="s2_text">
+                        <h6>Подписка не требуется</h6>
+                        <p>Закажите автомобиль и получите к нему доступ 24/7 с помощью телефона</p>
+                        <h6>От 20$ за 24 часа или 27$ за день</h6>
+                        <p>Аренда автомобилей от нескольких часов до нескольких дней</p>
+                        <h6>Приведено в действие местными жителями</h6>
+                        <p>Тысячи автомобилей доступны от людей рядом с Вами</p>
+                        <a href="./car/rent" class="main_button">Узнайте как это работает</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="section3">
+        <div class="container">
+            <h2>Последние арендованные авто</h2>
+            <div class="row mt-5">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card_auto">
+                        <a href="#"><div class="autopic autopic_new" style="background: url(https://www.bmw.ua/content/dam/bmw/common/all-models/m-series/m3-sedan/2017/driving-dynamics/BMW-m3-sedan-driving-dynamics-driving-dynamics-01.jpg) no-repeat"></div></a>
+                        <div class="carname">
+                            <h6><a href="#">BMW M3</a></h6>
+                            <span>400 грн.</span>
+                        </div>
+                        <div class="carstars">
+                            <a href="#"><img src="./img/star_gold.png" alt="png"></a>
+                            <a href="#"><img src="./img/star_gold.png" alt="png"></a>
+                            <a href="#"><img src="./img/star_grey.png" alt="png"></a>
+                            <a href="#"><img src="./img/star_grey.png" alt="png"></a>
+                            <a href="#"><img src="./img/star_grey.png" alt="png"></a>
+                        </div>
+                        <p class="footer_card">г. Киев • 34 заказов </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card_auto">
+                        <a href="#"><div class="autopic autopic_new" style="background: url(https://www.bmw.ua/content/dam/bmw/common/all-models/m-series/m3-sedan/2017/driving-dynamics/BMW-m3-sedan-driving-dynamics-driving-dynamics-01.jpg) no-repeat"></div></a>
+                        <div class="carname">
+                            <h6><a href="#">BMW M3 v2</a></h6>
+                            <span>500 грн.</span>
+                        </div>
+                        <div class="carstars">
+                            <a href="#"><img src="./img/star_gold.png" alt="png"></a>
+                            <a href="#"><img src="./img/star_gold.png" alt="png"></a>
+                            <a href="#"><img src="./img/star_gold.png" alt="png"></a>
+                            <a href="#"><img src="./img/star_gold.png" alt="png"></a>
+                            <a href="#"><img src="./img/star_grey.png" alt="png"></a>
+                        </div>
+                        <p class="footer_card">г. Киев • 200 заказов </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card_auto">
+                        <a href="#"><div class="autopic autopic_new" style="background: url(https://www.bmw.ua/content/dam/bmw/common/all-models/m-series/m3-sedan/2017/driving-dynamics/BMW-m3-sedan-driving-dynamics-driving-dynamics-01.jpg) no-repeat"></div></a>
+                        <div class="carname">
+                            <h6><a href="#">BMW M3 v3</a></h6>
+                            <span>750 грн.</span>
+                        </div>
+                        <div class="carstars">
+                            <a href="#"><img src="./img/star_gold.png" alt="png"></a>
+                            <a href="#"><img src="./img/star_gold.png" alt="png"></a>
+                            <a href="#"><img src="./img/star_gold.png" alt="png"></a>
+                            <a href="#"><img src="./img/star_gold.png" alt="png"></a>
+                            <a href="#"><img src="./img/star_grey.png" alt="png"></a>
+                        </div>
+                        <p class="footer_card">г. Киев • 341 заказов </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <a href="#" class="main_button">Взять в аренду</a>
+                </div>
+            </div>
+            <div class="s3_haveauto">
+                <h2>У Вас есть автомобиль? Заработайте с нами</h2>
+                <a href="#" class="main_button">Начните зарабатывать</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="section4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="s4_card">
+                        <img src="./img/section41.png" alt="png">
+                        <h6>Получить оплату</h6>
+                        <p>Персонализированные отчеты о доходах и наш алгоритм прогнозирования цен помогут вам
+                            максимизировать ежемесячный доход.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="s4_card">
+                        <img src="./img/section42.png" alt="png">
+                        <h6>Страхование включено</h6>
+                        <p>Поездки на Getaround покрываются страховым полисом в размере 1 млн. Долларов США, включая помощь на дорогах.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="s4_card">
+                        <img src="./img/section43.png" alt="png">
+                        <h6>Цифровой ключ</h6>
+                        <p>Устройство Getaround Connect ™ позволяет арендаторам разблокировать ваш автомобиль с помощью приложения Getaround во время поездки.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="s4_card">
+                        <img src="./img/section44.png" alt="png">
+                        <h6>Безопасный</h6>
+                        <p>Все арендаторы Getaround проходят проверку безопасности водителя, и мы предоставляем круглосуточную поддержку клиентов.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container d-flex justify-content-between">
+            <a href="./">
+                <h6 class="brand">SHARENT</h6>
+            </a>
+            <div class="menu">
+                <a href="./car/catalog">Взять в аренду</a>
+                <a href="./car/pass">Сдать в аренду</a>
+                <a href="./car/rent">Как это работает?</a>
+                <a href="#">Контакты</a>
+                <a href="./register">Личный кабинет</a>
+            </div>
+            <div class="socials_footer">
+                <a href="#"><img src="./img/footer_inst.png" alt="png"></a>
+                <a href="#"><img src="./img/footer_facebook.png" alt="png"></a>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/js/select2.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/datepicker.min.js"></script>
+
+    <script src="./js/notify.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.select_city').select2();
+
+
+            var dp1 = $('.datepicker-here');
+
+            dp1.datepicker({
+                inline: false,
+                range: true,
+                toggleSelected: true,
+                minDate: new Date(),
+                dateFormat: 'dd.mm.yyyy',
+            })
+
+
+            $('#section1 .datepicker-here').keyup(function(){
+                $(this).val(' ');
+            });
+
+            $('#section1 .find_auto.landing_find').click(function () {
+                if ($(this).parents('form').find('.datepicker-here').val().length>11) {
+                    $(this).parents('form').submit();
+                }
+                else if (($(this).parents('form').find('.datepicker-here').val().length>0) && ($(this).parents('form').find('.datepicker-here').val().length<12)) {
+                    Notification.create(2,'Выберите период минимум из двух дат');
+                }
+                else {
+                    $(this).parents('form').submit();
+                }
+            })
+        });
+
+    </script>
+</body>
+
+</html>

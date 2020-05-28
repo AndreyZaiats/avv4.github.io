@@ -1,0 +1,249 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>RocketRead тестовый курс</title>
+  <meta name="description" content="SpeedReading App">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css?v=1.0">
+  <link rel="stylesheet" href="css/main.css?v=1.0">
+  <link rel="stylesheet" href="css/sweetalert.css?v=1.0">
+  <link href="css/style.css" type="text/css" rel="stylesheet" charset="utf-8" />
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<div id="page-wrapper">
+
+		<!--<header id="header">
+		  <div class="pure-g container clearfix">
+		    <div class="pure-u-1-2">
+		    	<h1>RocketRead Demo</h1>
+		    </div>
+		  </div>
+		</header>-->
+
+		<div id="content" class="container">
+			
+			<div id="progress">
+				<!--<div class="sub-title">Progress:</div>-->
+				<div class="tasks">Все упражнения:</div>
+				<div class="progress">
+					<div class="progress-item first">
+						<div class="step">
+							<span>1. Таблица Шульте</span>
+						</div>
+					</div>
+					<div class="progress-item">
+						<div class="step">
+							<a href="fast-words.html">2. Карусель слов</a>
+						</div>
+					</div>
+					<div class="progress-item">
+						<div class="step">
+							<a href="phrase.html">3. Чтение фразами</a>
+						</div>
+					</div>
+					
+					<div class="progress-item">
+						<div class="step">
+							<a href="regression.html">4. Регрессия</a>
+						</div>
+					</div>
+					<div class="progress-item">
+						<div class="step">
+							<a href="schulte-5-5.html">5. Шульте 5x5</a>
+						</div>
+					</div>
+					<div class="progress-item">
+						<div class="step">
+							<a href="inverted-text.html">6. Перевёрнутый текст</a>
+						</div>
+					</div>
+					
+					<div class="progress-item">
+						<div class="step">
+							<a href="sprint.html">7. Спринт</a>
+						</div>
+					</div>
+					<div class="progress-item">
+						<div class="step">
+							<a href="fast-words-harder.html">8. Карусель слов 2</a>
+						</div>
+					</div>
+					<div class="progress-item">
+						<div class="step">
+							<a href="regression-harder.html">9. Регрессия сложнее</a>
+						</div>
+					</div>
+					<div class="progress-item last">
+						<div class="step">
+							<a href="finish.html">10. Финал</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="ex-wrap">
+				<div class="operateZone">
+					<div class="time" style="display: none">				
+						<form name="clockform">
+						 <p>Time: 
+						 <input id="clock" name="clock" size="12" maxlength="12" value="00:00:00.00">
+						 <input name="label" style="display: none;" size="12" maxlength="40" value="">
+						 <!--<input name="starter" type="button" value="Старт" onclick="findTIME()">--> 
+						 <!--<input name="clearer" type="button" value="Сбросить всё" onclick="clearALL()">-->
+						 </p><p id="marker">
+						 </p>
+						</form>
+						<div class="type">
+
+						</div> 
+					</div>
+
+					<script type="text/javascript">
+						function trim(string) { return string.replace (/\s+/g, " ").replace(/(^\s*)|(\s*)$/g, ''); }
+						 var init=0;
+						 var startDate,thisDate,tdiff;
+						 var clocktimer;
+						 var sum=0;
+
+						 function clearFields() {
+						  init = 0;
+						  clearTimeout(clocktimer);
+						  document.clockform.clock.value='00:00:00.00';
+						  document.clockform.label.value='';
+						 }
+
+						 function clearALL() {
+						  clearFields();
+						  document.getElementById('marker').innerHTML = '';
+						  sum = 0;
+						  /*document.getElementById('markerSum').innerHTML = '';*/
+						 }
+
+						 function timeToStr (t) {
+						  var ms = t%1000; t-=ms; ms=Math.floor(ms/10);
+						  t = Math.floor (t/1000);
+						  var s = t%60; t-=s;
+						  t = Math.floor (t/60);
+						  var m = t%60; t-=m;
+						  t = Math.floor (t/60);
+						  var h = t%60;
+						  if (h<10) h='0'+h;
+						  if (m<10) m='0'+m;
+						  if (s<10) s='0'+s;
+						  if (ms<10) ms='0'+ms;
+						  return h + ':' + m + ':' + s + '.' + ms;
+						 }
+
+						 function startTIME() { 
+						  thisDate = new Date();
+						  tdiff = thisDate.getTime() - startDate.getTime();
+						  var str = timeToStr (tdiff);
+						  if (init==1) document.clockform.clock.value = str;
+						  clocktimer = setTimeout("startTIME()",10);
+						 }
+
+						 function findTIME() {
+						  if (init==0) {
+						   startDate = new Date();
+						   startTIME();
+						   init = 1;
+						  } 
+						  else {
+						   sum += tdiff;
+						   var str = trim(document.clockform.label.value);
+						   clearFields();
+						  }
+						 }
+					</script>
+			</div>
+				<div class="container-schulte">
+					<div id="table">
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div><!-- /#page-wrapper -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- 	<button class="mr-2 mb-2 btn btn-primary" data-target="#onboardingTextModal" data-toggle="modal" type="button">Modal with text only</button>
+ --><div aria-hidden="true" class="onboarding-modal modal fade animated" id="shulte_modal1" role="dialog" tabindex="-1">
+		<div class="modal-dialog modal-centered" role="document">
+			<div class="modal-content text-center">
+				<div class="onboarding-media">
+					<img alt="" src="img/bigicon2.png" width="200px">
+				</div>
+				<div class="onboarding-content with-gradient">
+					<h4 class="onboarding-title">
+						Добро пожаловать!
+					</h4>
+					<div class="onboarding-text">
+						Перед вами короткий курс для обучения скорочтению, он содержит 9 интерактивных задач и занимает около 5 минут. Проходите этот курс регулярно для развития навыков.
+						<br>
+						<br>
+						Первое упражнение называется таблицы Шульте. Сфокусируйте внимание на таблице и нажимайте последовательно на номера от 1 до 16. Чем меньше общее время выполнения, тем лучше.
+					</div>
+					<button class="slick-next slick-arrow" aria-label="Close" type="button" style="" aria-disabled="false" data-dismiss="modal">Начать</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div aria-hidden="true" class="onboarding-modal modal fade animated" id="shulte_modal2" role="dialog" tabindex="-1">
+		<div class="modal-dialog modal-centered" role="document">
+			<div class="modal-content text-center">
+				<div class="onboarding-media">
+					<img alt="" src="img/bigicon2.png" width="200px">
+				</div>
+				<div class="onboarding-content with-gradient">
+					<h4 class="onboarding-title">
+						Отлично!
+					</h4>
+					<div class="onboarding-text">
+						<h4>Ваше время: <span></span></h4>
+						<img class="success_modal_img" src="img/success.png" alt="png">	
+					</div>
+					<button class="slick-next slick-arrow" type="button" style="" aria-disabled="false" data-dismiss="modal">Дальше</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--<footer id="footer">
+		<div class="container">
+	  	<div class="footer-container">
+			  2018 &copy; RocketRead
+	  	</div>
+		</div>
+	</footer>-->
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/lib/store.min.js"></script>
+  <script src="js/lib/sweetalert.min.js"></script>
+<!--   <script src="js/modal.js"></script>
+ -->  <script type="text/javascript" src="js/shulte.js"></script>
+  <script type="text/javascript">
+  	$(".tasks").on('click', function() {
+  		$(".progress").slideToggle();
+  	});
+  </script>
+
+</body>
+</html>
