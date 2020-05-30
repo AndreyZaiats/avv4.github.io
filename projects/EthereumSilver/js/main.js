@@ -627,9 +627,7 @@
 
          if(retina) {
 
-            $('.header .logo').find('img').attr({src:'./images/logo@2x.png',width:'90',height:'24'});   
-
-            $('.logo-ft').find('img').attr({src:'./images/logo-black@2x.png',width:'90',height:'24'});
+            console.log('retina')
 
          }
 

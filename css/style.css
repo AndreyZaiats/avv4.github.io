@@ -106,7 +106,7 @@ blockquote span img {
   height: 50px;
   left: calc(50% - 25px);
   bottom: calc(25% + 15px);
-  background-color: white;
+  background-color: transparent;
   border-radius: 50%;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
@@ -117,6 +117,7 @@ blockquote span img {
 .scale {
   opacity: 1;
   z-index: 12;
+  background-color: white;
   -webkit-transform: scale(50);
           transform: scale(50);
 }
@@ -791,8 +792,9 @@ blockquote span img {
 
 .home .banner {
   position: absolute;
-  width: 100%;
   top: 25%;
+  width: calc(100% - 2rem);
+  margin: 0 1rem;
   color: white;
 }
 
@@ -1590,6 +1592,87 @@ blockquote span img {
 /* ---------------------------------
 	13. Mobile Responsive Css
 --------------------------------- */
+@media screen and (max-height: 730px) {
+  .home .banner {
+    top: 22%;
+  }
+  .home .banner h1 {
+    font-size: 36px;
+  }
+  .home .banner .cd-headline {
+    font-size: 16px;
+  }
+  .home .banner .tech {
+    font-size: 12px;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-height: 575px) {
+  .home .copy {
+    display: none;
+  }
+  .menu .but-menu {
+    width: 70px;
+    height: 70px;
+  }
+  .menu .but-menu:after {
+    display: none;
+  }
+  .menu .menu-item {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .menu .menu-item i {
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+  }
+  .menu .but-menu, .menu .menu-item {
+    bottom: 17%;
+  }
+  .page-background {
+    bottom: calc(16% + 15px);
+  }
+  .home .banner {
+    top: 15%;
+  }
+  .about-toggle {
+    -webkit-transform: translate3d(0px, -70px, 0);
+            transform: translate3d(0px, -70px, 0);
+  }
+  .resume-toggle {
+    -webkit-transform: translate3d(70px, -15px, 0);
+            transform: translate3d(70px, -15px, 0);
+  }
+  .portfolio-toggle {
+    -webkit-transform: translate3d(50px, 50px, 0);
+            transform: translate3d(50px, 50px, 0);
+  }
+  .telegram-toggle {
+    -webkit-transform: translate3d(-50px, 50px, 0);
+            transform: translate3d(-50px, 50px, 0);
+  }
+  .contact-toggle {
+    -webkit-transform: translate3d(-70px, -15px, 0);
+            transform: translate3d(-70px, -15px, 0);
+  }
+}
+
+@media screen and (max-height: 425px) {
+  .home .banner {
+    top: 5%;
+  }
+  .menu .but-menu,
+  .menu .menu-item {
+    bottom: 15%;
+  }
+  .page-background {
+    bottom: calc(15% + 10px);
+  }
+}
+
 @media screen and (max-width: 991px) {
   .home .banner h1 {
     font-size: 60px;
@@ -1709,6 +1792,12 @@ blockquote span img {
   .home .banner p {
     font-size: 17px;
   }
+  .home .banner .cd-headline {
+    font-size: 14px;
+  }
+  .home .banner .cd-headline .cd-words-wrapper b {
+    width: 100% !important;
+  }
   .home .social {
     top: unset;
     bottom: 0;
@@ -1717,6 +1806,9 @@ blockquote span img {
   }
   .home .copy {
     display: none;
+  }
+  .portfolio .portfolio-items {
+    margin-top: 50px !important;
   }
   .section .header-page h2 {
     font-size: 27px;
@@ -1787,61 +1879,14 @@ blockquote span img {
   .blog-page .blog-comments ul li ul {
     margin-left: 30px;
   }
-}
-
-@media screen and (max-height: 575px) {
-  .home .copy {
-    display: none;
-  }
-  .menu .but-menu {
-    width: 70px;
-    height: 70px;
-  }
-  .menu .but-menu:after {
-    display: none;
-  }
-  .menu .menu-item {
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-  }
-  .menu .menu-item i {
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-  }
-  .about-toggle {
-    -webkit-transform: translate3d(0px, -70px, 0);
-            transform: translate3d(0px, -70px, 0);
-  }
-  .resume-toggle {
-    -webkit-transform: translate3d(70px, -15px, 0);
-            transform: translate3d(70px, -15px, 0);
-  }
-  .portfolio-toggle {
-    -webkit-transform: translate3d(50px, 50px, 0);
-            transform: translate3d(50px, 50px, 0);
-  }
-  .telegram-toggle {
-    -webkit-transform: translate3d(-50px, 50px, 0);
-            transform: translate3d(-50px, 50px, 0);
-  }
-  .contact-toggle {
-    -webkit-transform: translate3d(-70px, -15px, 0);
-            transform: translate3d(-70px, -15px, 0);
-  }
-}
-
-@media screen and (max-height: 425px) {
-  .home .banner {
-    top: 5%;
-  }
-  .menu .but-menu,
-  .menu .menu-item {
-    bottom: 15%;
+  .menu .but-menu, .menu .menu-item {
+    bottom: 17%;
   }
   .page-background {
-    bottom: calc(15% + 10px);
+    bottom: calc(16% + 15px);
+  }
+  .home .banner {
+    top: 15%;
   }
 }
 

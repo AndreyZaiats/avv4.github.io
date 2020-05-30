@@ -69,8 +69,12 @@
 }
 
 #itemssect .iconbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .big-feature.big-ft-1 .section-wrap {
@@ -127,16 +131,31 @@
 }
 
 #service .section-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #service .buttons_help {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 230px;
 }
 
@@ -214,23 +233,45 @@
 }
 
 #section_faq .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #section_faq .container .faq_column {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-basis: 45%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
 }
 
 #section_faq .container .faq_column .faq_item {
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   margin: 1rem 0;
 }
@@ -242,7 +283,8 @@
   padding: 0.85rem 1rem;
   top: 0.65rem;
   left: -1rem;
-  box-shadow: 0px 1px 10px #9E9E9E;
+  -webkit-box-shadow: 0px 1px 10px #9E9E9E;
+          box-shadow: 0px 1px 10px #9E9E9E;
 }
 
 #section_faq .container .faq_column .faq_item .img_block img {
@@ -252,7 +294,8 @@
 #section_faq .container .faq_column .faq_item .faq_link {
   color: #111;
   background: white;
-  box-shadow: 0px 0px 10px #c9c9c9;
+  -webkit-box-shadow: 0px 0px 10px #c9c9c9;
+          box-shadow: 0px 0px 10px #c9c9c9;
   width: 100%;
   padding: 2rem;
   padding-left: 4rem;
@@ -280,11 +323,11 @@
 }
 
 .wrapper .sec-half {
-  width: 42% !important;
+  width: 39% !important;
 }
 
 .flat-call-back:before {
-  background-color: #333;
+  background-color: #f1424c;
   opacity: 0.92;
 }
 
@@ -302,7 +345,9 @@
     padding: 0;
   }
   #itemssect .iconbox {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   #features {
     margin-top: 80px;
@@ -319,10 +364,15 @@
     margin-top: 20px;
   }
   #service .section-right {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   #section_faq .container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #section_faq .container .faq_column {
     width: 100%;
@@ -338,3 +388,4 @@
     margin: 0 auto;
   }
 }
+/*# sourceMappingURL=main.css.map */

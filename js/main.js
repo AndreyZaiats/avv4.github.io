@@ -71,7 +71,7 @@ $(document).ready(function() {
 		if (!($(this).hasClass('nowhite'))) {
 			setTimeout(function() {
 				$('.page-background').addClass('scale');
-			}, 500);
+			}, 300);
 	
 			$($menu_but).addClass('hide');
 		}
@@ -88,11 +88,11 @@ $(document).ready(function() {
 		setTimeout(function() {
 			$('.page-background').removeClass('scale');
 			$('i.about-show, i.resume-show, i.portfolio-show, i.blog-show, i.contact-show').fadeIn("slow");
-		}, 400);
+		}, 300);
 			
 		setTimeout(function() {
 			$($menu_but).css({'z-index': '4'}).removeClass('hide');
- 	 	}, 700);
+ 	 	}, 500);
 
 		$('.page-background').css({'z-index': '2'});
 		
