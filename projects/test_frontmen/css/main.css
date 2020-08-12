@@ -1,0 +1,654 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: "Diodrum-Light", sans-serif;
+  src: url(../fonts/DiodrumCyrillic-Light.woff2) format("woff2"), url(../fonts/DiodrumCyrillic-Light.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "Diodrum-Medium", sans-serif;
+  src: url(../fonts/DiodrumCyrillic-Medium.woff2) format("woff2"), url(../fonts/DiodrumCyrillic-Medium.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "Diodrum-SemiBold", sans-serif;
+  src: url(../fonts/DiodrumCyrillic-Semibold.woff2) format("woff2"), url(../fonts/DiodrumCyrillic-Semibold.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "Helvetica", sans-serif;
+  src: url(../fonts/HelveticaRegular.woff) format("woff"), url(../fonts/HelveticaRegular.ttf) format("opentype");
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Diodrum-SemiBold", sans-serif;
+}
+
+body h1 {
+  font-size: 4.375rem;
+}
+
+body h2 {
+  font-size: 4.063rem;
+  color: #2D2971;
+}
+
+body h3 {
+  font-size: 1.75rem;
+}
+
+body h4 {
+  font-size: 1.5rem;
+}
+
+body h5 {
+  font-size: 1.25rem;
+}
+
+body h6 {
+  font-size: 1rem;
+}
+
+body p {
+  font-family: "Diodrum-Light", sans-serif;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+body ul {
+  -webkit-padding-start: 0px;
+}
+
+body ul li {
+  list-style: none;
+}
+
+body a {
+  text-decoration: none;
+  font-family: "Helvetica", sans-serif;
+  font-weight: bold;
+}
+
+body a:hover {
+  text-decoration: none;
+}
+
+body span {
+  font-family: "Diodrum-Light", sans-serif;
+}
+
+.container {
+  width: 1140px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text_gradient {
+  background: linear-gradient(93.49deg, #F16500 12.04%, #FBE12B 119.49%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* Обрезаем фон по тексту */
+  -webkit-text-fill-color: transparent;
+  /* Прозрачный текст */
+}
+
+.btn {
+  padding: 17px 0;
+  width: 190px;
+  cursor: pointer;
+  border-radius: 15px;
+  text-align: center;
+  border: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: #021D65;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: inline-block;
+}
+
+.btn:hover {
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+section.help_us {
+  margin-top: 3.8rem;
+}
+
+section.help_us .help_us__cover {
+  position: relative;
+  background-image: url(../img/section1.png);
+  background-position: 50% 80%;
+  background-size: cover;
+  min-height: 38.5rem;
+}
+
+section.help_us .help_us__cover .small_pic {
+  position: absolute;
+  bottom: -4rem;
+  left: 50%;
+  height: 260px;
+}
+
+section.help_us .help_us__text {
+  position: absolute;
+  left: 10rem;
+  top: 6.5rem;
+}
+
+section.help_us .help_us__text h1 {
+  width: 45rem;
+  max-width: 100%;
+}
+
+section.help_us .help_us__text .btn {
+  margin-top: 4rem;
+}
+
+section.symptomaty {
+  padding: 7rem 0;
+}
+
+section.symptomaty h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+section.symptomaty .symptomaty__cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+section.symptomaty .symptomaty__item {
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+section.symptomaty .symptomaty__item img {
+  height: 8rem;
+}
+
+section.symptomaty .symptomaty__item h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+
+section.symptomaty .symptomaty__item:nth-child(1), section.symptomaty .symptomaty__item:nth-child(2) {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+section.find_medicine {
+  position: relative;
+}
+
+section.find_medicine .find_medicine__cover {
+  position: relative;
+  background-image: url(../img/section3.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 38.5rem;
+}
+
+section.find_medicine .find_medicine__text {
+  position: absolute;
+  left: 10rem;
+  width: 45rem;
+  max-width: 100%;
+  top: 6.5rem;
+}
+
+section.find_medicine .find_medicine__text p {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  line-height: 22px;
+  font-family: "Helvetica", sans-serif;
+}
+
+section.exclusive {
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  background-position: center bottom;
+  background-size: cover;
+  background-image: url(../img/orange_layer.svg);
+  background-repeat: no-repeat;
+}
+
+section.exclusive h2 {
+  text-align: center;
+}
+
+section.exclusive .exclusive__cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 100%;
+  margin: 3rem 0;
+}
+
+section.exclusive .exclusive__cont .exclusive__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 38%;
+      flex-basis: 38%;
+  margin: 2rem;
+}
+
+section.exclusive .exclusive__cont .exclusive__item p {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Helvetica", sans-serif;
+}
+
+section.exclusive .exclusive__cont .exclusive__item h4 {
+  color: #2D2971;
+}
+
+section.exclusive .exclusive__cont .exclusive__item .btn {
+  margin-top: auto;
+}
+
+section.reviews {
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+}
+
+section.reviews h2 {
+  text-align: center;
+  font-size: 45px;
+}
+
+section.reviews .review_cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.reviews .review_cont .review_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  margin: 2rem;
+}
+
+section.reviews .review_cont .review_item .review_item__image {
+  background-position: center;
+  border-radius: 50%;
+  margin-top: 1rem;
+  height: 9rem;
+  width: 9rem;
+  margin-right: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section.reviews .review_cont .review_item .review_item__text {
+  max-width: calc(100% - 10rem);
+}
+
+section.reviews .review_cont .review_item .review_item__text h4 {
+  color: #2D2971;
+  margin-bottom: 5px;
+}
+
+section.reviews .review_cont .review_item .review_item__text h6 {
+  margin-top: 0;
+}
+
+section.reviews .review_cont .review_item .review_item__text p {
+  line-height: 25px;
+}
+
+section.video {
+  padding: 2rem 1rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+section.video .video__content {
+  background-size: cover;
+  background-position: center;
+  width: 1280px;
+  height: 720px;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+}
+
+section.video .video__content .video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+section.video .video__content .video__button img {
+  height: 11rem;
+}
+
+section.faq .faq__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.faq .faq__heading img {
+  height: 12rem;
+}
+
+section.faq .faq__heading h2 {
+  color: #2D2971;
+}
+
+section.faq .faq__content .faq__question {
+  border-bottom: 1px solid #FF671F;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.faq .faq__content .faq__question img {
+  height: 12px;
+  margin-right: 2rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+section.faq .faq__content .faq__question h5 {
+  color: #FF671F;
+}
+
+section.faq .faq__content .faq__question .arrow_up {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+section.faq .faq__content .faq__answer {
+  display: none;
+  margin-left: 3rem;
+}
+
+section.faq .faq__content .faq__answer p {
+  margin: 1rem 0;
+  line-height: 24px;
+}
+
+section.self-medication {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+section.self-medication ol {
+  padding-left: 10px;
+}
+
+section.self-medication li, section.self-medication p {
+  font-size: 12px;
+  font-family: "Roboto";
+  opacity: 0.5;
+  padding: 5px 0;
+}
+
+.gradient_line {
+  display: none;
+}
+
+sup {
+  opacity: .5;
+}
+
+sup.mobile {
+  display: none;
+  opacity: .5;
+  -webkit-text-fill-color: #000;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 575px) {
+  body h1, body h2 {
+    font-size: 30px;
+  }
+  sup:nth-child(1) {
+    display: initial;
+  }
+  .gradient_line {
+    background: linear-gradient(93.49deg, #F16500 12.04%, #FBE12B 119.49%);
+    height: 39px;
+    width: 100%;
+    display: block;
+  }
+  section.help_us {
+    margin-top: 30px;
+  }
+  section.help_us .help_us__cover {
+    position: relative;
+    background-position: 96% 99%;
+    background-size: 180%;
+    min-height: 350px;
+    background-repeat: no-repeat;
+  }
+  section.help_us .help_us__cover .small_pic {
+    position: absolute;
+    bottom: 0rem;
+    left: 50px;
+    height: 160px;
+  }
+  section.help_us .help_us__text {
+    position: relative;
+    padding: 0 1rem;
+    left: 0;
+    top: 0;
+  }
+  section.help_us .help_us__text .btn {
+    margin-top: 1rem;
+  }
+  section.symptomaty {
+    padding: 3rem 0;
+  }
+  section.symptomaty h2 {
+    margin-bottom: 1rem;
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  section.symptomaty .symptomaty__item {
+    margin: 1rem;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+  section.symptomaty .symptomaty__item img {
+    height: 6rem;
+  }
+  section.symptomaty .symptomaty__item h6 {
+    text-align: center;
+  }
+  section.symptomaty .symptomaty__item:nth-child(1), section.symptomaty .symptomaty__item:nth-child(2) {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  section.find_medicine .find_medicine__cover {
+    position: relative;
+    background-position: 96% 99%;
+    background-size: 180%;
+    min-height: 350px;
+    background-repeat: no-repeat;
+  }
+  section.find_medicine .find_medicine__text {
+    position: relative;
+    padding: 0 1rem;
+    left: 0;
+    top: 0;
+  }
+  section.find_medicine .find_medicine__text p {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  section.find_medicine .find_medicine__text .btn {
+    margin-top: 1rem;
+  }
+  section.exclusive {
+    background: white;
+    padding-top: 4rem;
+    padding-bottom: 0;
+  }
+  section.exclusive h2 {
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  section.exclusive .exclusive__cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.reviews {
+    padding-top: 0;
+  }
+  section.reviews .review_cont .review_item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  section.reviews .review_cont .review_item--off {
+    display: none;
+  }
+  section.video {
+    max-width: 100%;
+  }
+  section.video .video__content {
+    width: 100%;
+    height: 300px;
+  }
+  section.video .video__content .video__button img {
+    height: 5rem;
+  }
+  section.faq {
+    padding: 1rem;
+  }
+  section.faq .faq__heading img {
+    height: 6rem;
+  }
+  section.self-medication {
+    padding: 2rem 1rem;
+    padding-top: 3rem;
+  }
+  section.self-medication img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  section.help_us .help_us__cover .small_pic {
+    height: 126px;
+  }
+  section.find_medicine .find_medicine__cover {
+    min-height: 255px;
+  }
+  section.help_us .help_us__cover {
+    min-height: 275px;
+  }
+  section.find_medicine .find_medicine__text {
+    max-width: 90%;
+  }
+  section.video .video__content {
+    height: 200px;
+  }
+  section.symptomaty .symptomaty__item {
+    -ms-flex-preferred-size: 77px;
+        flex-basis: 77px;
+  }
+  section.symptomaty .symptomaty__item img {
+    height: 4rem;
+  }
+  section.symptomaty .symptomaty__item h6 {
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
