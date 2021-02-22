@@ -1,27 +1,3 @@
-/* -----------------------------------------------
-					Js Main
---------------------------------------------------
-
-    Template Name: Leila - Personal Portfolio Template
-    Author: Malyarchuk
-    Copyright: 2019
-
---------------------------------------------------
-
-Table of Content
-
-	1. Preloader
-	2. Menu and Page
-	3. Portfolio Image Link
-	4. Portfolio Video Link
-	5. About Video Link
-	6. Testimonials OwlCarousel
-	7. YouTube Video
-	8. Validate Contact Form
-	9. Google Map
-
------------------------------------ */
-
 $(document).ready(function() {
     "use strict";
 	
@@ -183,7 +159,8 @@ $(document).ready(function() {
         autoplay: true,
         smartSpeed: 500,
         responsiveClass: true,
-        dots: false,
+				dots: false,
+				nav: true,
         autoplayHoverPause: true,
         responsive: {
             0: {
