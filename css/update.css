@@ -13,6 +13,23 @@ h1.typed-effect {
     }
 }
 
+@media screen and (max-width: 992px) {
+    h1.typed-effect {
+        font-size: 35px;
+        min-height: 110px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    h1.typed-effect {
+        width: calc(100% - 100px);
+        text-transform: none;
+        padding-right: 10px;
+        font-size: 16px;
+        min-height: auto;
+    }
+}
+
 .center-block-skills {
     color: #c6b6b3;
     position: relative;
@@ -30,8 +47,35 @@ h1.typed-effect {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .center-block-skills {
+        font-size: 12px
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .center-block-skills {
+        width: calc(100% - 100px);
+        text-transform: none;
+        padding-right: 10px;
+        position: absolute;
+        margin-top: 40px;
+        margin-left: 100px;
+    }
+
+    .center-block-skills br {
+        display: none;
+    }
+}
+
 .center-container.center-container-split-content {
     background: transparent;
+}
+
+@media screen and (max-width: 575px) {
+    .center-container.center-container-split-content {
+        width: 100%;
+    }
 }
 
 .upper-page-image {
@@ -55,6 +99,28 @@ h1.typed-effect {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .upper-page-image {
+        left: calc(50% + 27vw);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .upper-page-image {
+        left: 50px;
+        height: 70px;
+        width: 70px;
+        top: 50%;
+        border: 2px solid #c6b6b3;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about-txt {
+        padding: 0 20px;
+    }
+}
+
 .upper-page-image:hover {
     box-shadow: 0 3px 30px #0f0e0e;
 }
@@ -67,15 +133,29 @@ h1.typed-effect {
     margin-bottom: 100px;
 }
 
+@media screen and (max-width: 992px) {
+    .portfolio {
+        margin-bottom: 0px;
+    }
+}
+
 .portfolio__list {
     display: flex;
     margin-top: 150px;
+}
+
+@media screen and (max-width: 992px) {
+    .portfolio__list {
+        margin-top: 120px;
+        flex-direction: column;
+    }
 }
 
 .portfolio__item {
     display: flex;
     flex-direction: column;
     flex-basis: 33.33%;
+    position: relative;
 }
 
 .portfolio__image {
@@ -92,11 +172,31 @@ h1.typed-effect {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .portfolio__image {
+        height: auto;
+        box-shadow: 0 3px 30px #2b2b2b94;
+    }
+}
+
 .portfolio__p {
     font-size: 14px;
     color: #c6b6b3;
     text-align: center;
     padding: 40px 30px 0;
+}
+
+@media screen and (max-width: 992px) {
+    .portfolio__p {
+        padding: 10px 10px 10px;
+        margin-bottom: 0;
+        background: #1b1c21a3;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
 }
 
 .portfolio__p a {
@@ -127,6 +227,12 @@ h1.typed-effect {
     padding-bottom: 10px;
 }
 
+@media screen and (max-width: 992px) {
+    .resume__link {
+        font-size: 10px;
+    }
+}
+
 .resume__image {
     height: 30px;
     margin-right: 20px;
@@ -139,4 +245,73 @@ h1.typed-effect {
 .contact-info-wrapper a {
     font-family: MontSerrat;
     padding-bottom: 7px;
+}
+
+@media screen and (max-width: 575px) {
+    .spacer-line-vertical-dark::after, .spacer-line-vertical-light::after {
+        display: none;
+    }
+
+    h2.section-heading {
+        text-align: left;
+        font-size: 28px;
+    }
+
+    .about-bottom {
+        margin-top: 0;
+    }
+
+    .resume__list {
+        flex-direction: column;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    .resume__link {
+        font-size: 14px;
+    }
+
+    .contact-info-wrapper {
+        margin: 0;
+    }
+
+    .portfolio__p {
+        text-align: left;
+        padding: 10px 15px 10px;
+        font-size: 10px;
+    }
+
+    .about-txt {
+        text-align: left;
+        padding: 0 15px !important;
+    }
+
+    .portfolio__list {
+        margin-top: 15px !important;
+    }
+
+    .contact-info-wrapper .col-sm-4 {
+        padding: 0 !important;
+    }
+
+    .contact-info-wrapper {
+        margin-top: 5px;
+    }
+
+    .contact-info-description {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-info-description-img {
+        font-size: 30px;
+        margin: 5px 0;
+        margin-left: 5px;
+        margin-right: 25px;
+        margin-bottom: 7px;
+    }
+
+    .contact {
+        padding-bottom: 40px;
+    }
 }
